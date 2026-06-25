@@ -1,0 +1,22 @@
+{
+  "title": "JLPT N3 — 直前対策 (文字・語彙・文法)",
+  "subtitle": "Chokuzen Taisaku N3 — o'yin tarzidagi mashq",
+  "levelsCount": 15,
+  "levels": [
+    { "id": 1,  "file": "test01.json", "title_jp": "第1回",  "title_uz": "1-bosqich",  "minutes": 50 },
+    { "id": 2,  "file": "test02.json", "title_jp": "第2回",  "title_uz": "2-bosqich",  "minutes": 50 },
+    { "id": 3,  "file": "test03.json", "title_jp": "第3回",  "title_uz": "3-bosqich",  "minutes": 50 },
+    { "id": 4,  "file": "test04.json", "title_jp": "第4回",  "title_uz": "4-bosqich",  "minutes": 50 },
+    { "id": 5,  "file": "test05.json", "title_jp": "第5回",  "title_uz": "5-bosqich",  "minutes": 50 },
+    { "id": 6,  "file": "test06.json", "title_jp": "第6回",  "title_uz": "6-bosqich",  "minutes": 50 },
+    { "id": 7,  "file": "test07.json", "title_jp": "第7回",  "title_uz": "7-bosqich",  "minutes": 50 },
+    { "id": 8,  "file": "test08.json", "title_jp": "第8回",  "title_uz": "8-bosqich",  "minutes": 50 },
+    { "id": 9,  "file": "test09.json", "title_jp": "第9回",  "title_uz": "9-bosqich",  "minutes": 50 },
+    { "id": 10, "file": "test10.json", "title_jp": "第10回", "title_uz": "10-bosqich", "minutes": 50 },
+    { "id": 11, "file": "test11.json", "title_jp": "第11回", "title_uz": "11-bosqich", "minutes": 50 },
+    { "id": 12, "file": "test12.json", "title_jp": "第12回", "title_uz": "12-bosqich", "minutes": 50 },
+    { "id": 13, "file": "test13.json", "title_jp": "第13回", "title_uz": "13-bosqich", "minutes": 50 },
+    { "id": 14, "file": "test14.json", "title_jp": "第14回", "title_uz": "14-bosqich", "minutes": 50 },
+    { "id": 15, "file": "test15.json", "title_jp": "第15回", "title_uz": "15-bosqich", "minutes": 50 }
+  ]
+}

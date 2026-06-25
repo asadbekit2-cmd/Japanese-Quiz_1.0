@@ -1,0 +1,916 @@
+{
+  "id": 11,
+  "title_jp": "第11回 模擬テスト",
+  "title_uz": "11-test",
+  "minutes": 50,
+  "sections": [
+    {
+      "id": "vocab",
+      "name_jp": "文字・語彙",
+      "name_uz": "Kanji va lug'at",
+      "problems": [
+        {
+          "id": "v1",
+          "type": "kanji_reading",
+          "instruction_jp": "＿＿のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zning o'qilishi sifatida eng to'g'risini tanlang.",
+          "questions": [
+            {
+              "id": "t11-v1-1",
+              "stem": "天気がいいので、洗たく物がよく【乾いた】。",
+              "options": [
+                "ひらいた",
+                "うごいた",
+                "みがいた",
+                "かわいた"
+              ],
+              "answer": 4,
+              "reading": "かわいた",
+              "explanation_uz": "乾く → かわく (qurimoq)",
+              "tr": "Havo yaxshi bo'lgani uchun kir yaxshi quridi."
+            },
+            {
+              "id": "t11-v1-2",
+              "stem": "この道がとなりの市との【境界】です。",
+              "options": [
+                "きょかい",
+                "きょうかい",
+                "きょがい",
+                "きょうがい"
+              ],
+              "answer": 2,
+              "reading": "きょうかい",
+              "explanation_uz": "境界 → きょうかい (chegara)",
+              "tr": "Bu yo'l qo'shni shahar bilan chegara."
+            },
+            {
+              "id": "t11-v1-3",
+              "stem": "【以後】は、別々に行動しましょう。",
+              "options": [
+                "いこ",
+                "いこう",
+                "いご",
+                "いごう"
+              ],
+              "answer": 3,
+              "reading": "いご",
+              "explanation_uz": "以後 → いご (bundan keyin, keyinchalik)",
+              "tr": "Bundan keyin alohida harakat qilaylik."
+            },
+            {
+              "id": "t11-v1-4",
+              "stem": "もえないごみを土に【埋めて】はいけません。",
+              "options": [
+                "こめて",
+                "ためて",
+                "とめて",
+                "うめて"
+              ],
+              "answer": 4,
+              "reading": "うめて",
+              "explanation_uz": "埋める → うめる (ko'mmoq)",
+              "tr": "Yonmaydigan axlatni tuproqqa ko'mish mumkin emas."
+            },
+            {
+              "id": "t11-v1-5",
+              "stem": "【例】をあげて説明してください。",
+              "options": [
+                "え",
+                "れい",
+                "ず",
+                "けん"
+              ],
+              "answer": 2,
+              "reading": "れい",
+              "explanation_uz": "例 → れい (misol)",
+              "tr": "Misol keltirib tushuntiring."
+            },
+            {
+              "id": "t11-v1-6",
+              "stem": "美しい【風景】が広がっている。",
+              "options": [
+                "ふうけい",
+                "ふうげい",
+                "ふけい",
+                "ふげい"
+              ],
+              "answer": 1,
+              "reading": "ふうけい",
+              "explanation_uz": "風景 → ふうけい (manzara, ko'rinish)",
+              "tr": "Go'zal manzara yoyilib yotibdi."
+            },
+            {
+              "id": "t11-v1-7",
+              "stem": "甘いものは【骨】によくない。",
+              "options": [
+                "こつ",
+                "ごつ",
+                "ほね",
+                "ぼね"
+              ],
+              "answer": 3,
+              "reading": "ほね",
+              "explanation_uz": "骨 → ほね (suyak)",
+              "tr": "Shirinlik suyak uchun yaxshi emas."
+            },
+            {
+              "id": "t11-v1-8",
+              "stem": "ある人から【奇妙】な話を聞いた。",
+              "options": [
+                "びりょう",
+                "びみょう",
+                "きちょう",
+                "きみょう"
+              ],
+              "answer": 4,
+              "reading": "きみょう",
+              "explanation_uz": "奇妙 → きみょう (g'alati, ajabtovur)",
+              "tr": "Bir odamdan g'alati gap eshitdim."
+            }
+          ]
+        },
+        {
+          "id": "v2",
+          "type": "orthography",
+          "instruction_jp": "＿＿のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zni kanji bilan yozganda eng to'g'risini tanlang.",
+          "questions": [
+            {
+              "id": "t11-v2-9",
+              "stem": "【しぜん】の中で運動するのは、気持ちがよい。",
+              "options": [
+                "仕然",
+                "事然",
+                "自然",
+                "私然"
+              ],
+              "answer": 3,
+              "explanation_uz": "しぜん → 自然 (tabiat)",
+              "tr": "Tabiat qo'ynida sport qilish yoqimli."
+            },
+            {
+              "id": "t11-v2-10",
+              "stem": "【きょうじゅ】の指導のもとで、論文を書いた。",
+              "options": [
+                "教師",
+                "教示",
+                "教受",
+                "教授"
+              ],
+              "answer": 4,
+              "explanation_uz": "きょうじゅ → 教授 (professor)",
+              "tr": "Professor rahbarligida ilmiy ish yozdim."
+            },
+            {
+              "id": "t11-v2-11",
+              "stem": "この川は、あの川より【あさい】。",
+              "options": [
+                "深い",
+                "浅い",
+                "太い",
+                "細い"
+              ],
+              "answer": 2,
+              "explanation_uz": "あさい → 浅い (sayoz)",
+              "tr": "Bu daryo u daryodan sayozroq."
+            },
+            {
+              "id": "t11-v2-12",
+              "stem": "この木は、冬に【かれて】しまう。",
+              "options": [
+                "枝れて",
+                "朽れて",
+                "枯れて",
+                "相れて"
+              ],
+              "answer": 3,
+              "explanation_uz": "かれる → 枯れる (qurimoq — o'simlik)",
+              "tr": "Bu daraxt qishda qurib qoladi."
+            },
+            {
+              "id": "t11-v2-13",
+              "stem": "自分の考えを【しゅちょう】する。",
+              "options": [
+                "手長",
+                "手張",
+                "主長",
+                "主張"
+              ],
+              "answer": 4,
+              "explanation_uz": "しゅちょう → 主張 (qat'iy fikr bildirish, da'vo)",
+              "tr": "O'z fikrini qat'iy bildiraman (talab qilaman)."
+            },
+            {
+              "id": "t11-v2-14",
+              "stem": "コンサートホールに【おおぜい】の人が集まった。",
+              "options": [
+                "大勢",
+                "多勢",
+                "大盛",
+                "多盛"
+              ],
+              "answer": 1,
+              "explanation_uz": "おおぜい → 大勢 (ko'p odam, anchagina)",
+              "tr": "Konsert zaliga ko'p odam yig'ildi."
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "type": "context",
+          "instruction_jp": "（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "( ) ga qo'yish uchun eng mos so'zni tanlang.",
+          "questions": [
+            {
+              "id": "t11-v3-15",
+              "stem": "デジカメの写真の（　）をコンピューターに保存してください。",
+              "options": [
+                "マウス",
+                "キーボード",
+                "カバー",
+                "データ"
+              ],
+              "answer": 4,
+              "explanation_uz": "データ = ma'lumot, data",
+              "tr": "Raqamli kamera suratlari ma'lumotini kompyuterga saqlang."
+            },
+            {
+              "id": "t11-v3-16",
+              "stem": "友だちから、メールの（　）が来ないので、心配だ。",
+              "options": [
+                "電信",
+                "配布",
+                "返信",
+                "到着"
+              ],
+              "answer": 3,
+              "explanation_uz": "返信 = javob (xat/xabarga)",
+              "tr": "Do'stimdan elektron xat javobi kelmagani uchun xavotirdaman."
+            },
+            {
+              "id": "t11-v3-17",
+              "stem": "ヨーロッパの歴史あるホテルに（　）しました。",
+              "options": [
+                "滞在",
+                "存在",
+                "停留",
+                "停滞"
+              ],
+              "answer": 1,
+              "explanation_uz": "滞在 = vaqtincha turish, qolish",
+              "tr": "Yevropaning tarixiy mehmonxonasida turdim (yashadim)."
+            },
+            {
+              "id": "t11-v3-18",
+              "stem": "自転車を（　）、前へ進む。",
+              "options": [
+                "おして",
+                "こいで",
+                "にぎって",
+                "とめて"
+              ],
+              "answer": 2,
+              "explanation_uz": "(自転車を)こぐ = pedal bosmoq, velosiped haydamoq",
+              "tr": "Velosiped pedalini bosib (haydab), oldinga yuraman."
+            },
+            {
+              "id": "t11-v3-19",
+              "stem": "テストに向けて（　）の準備をした。",
+              "options": [
+                "全長",
+                "全盛",
+                "万人",
+                "万全"
+              ],
+              "answer": 4,
+              "explanation_uz": "万全 = to'la-to'kis, mukammal (tayyorgarlik)",
+              "tr": "Testga to'liq (mukammal) tayyorgarlik ko'rdim."
+            },
+            {
+              "id": "t11-v3-20",
+              "stem": "オレンジを（　）、ジュースを作る。",
+              "options": [
+                "ぬって",
+                "かんで",
+                "こんで",
+                "しぼって"
+              ],
+              "answer": 4,
+              "explanation_uz": "しぼる = siqmoq, siqib olmoq",
+              "tr": "Apelsinni siqib, sharbat tayyorlayman."
+            },
+            {
+              "id": "t11-v3-21",
+              "stem": "（　）を取りながら、発表を聞いてください。",
+              "options": [
+                "レポート",
+                "メモ",
+                "ペーパー",
+                "ディベート"
+              ],
+              "answer": 2,
+              "explanation_uz": "メモを取る = qayd qilmoq, eslatma yozmoq",
+              "tr": "Qayd (eslatma) olib turib, taqdimotni tinglang."
+            },
+            {
+              "id": "t11-v3-22",
+              "stem": "私の夢は、3階（　）の家に住むことです。",
+              "options": [
+                "作り",
+                "建て",
+                "重ね",
+                "乗せ"
+              ],
+              "answer": 2,
+              "explanation_uz": "〜階建て = ...qavatli (bino)",
+              "tr": "Mening orzuim — 3 qavatli uyda yashash."
+            },
+            {
+              "id": "t11-v3-23",
+              "stem": "私は、2人の意見を聞いて、彼の意見が正しいと（　）した。",
+              "options": [
+                "行",
+                "成立",
+                "判断",
+                "実現"
+              ],
+              "answer": 3,
+              "explanation_uz": "判断 = hukm, baho, qaror",
+              "tr": "Men ikki kishining fikrini eshitib, uning fikri to'g'ri deb hukm qildim (qaror qildim)."
+            },
+            {
+              "id": "t11-v3-24",
+              "stem": "髪を短く切って、（　）した気分になった。",
+              "options": [
+                "すっきり",
+                "こっそり",
+                "すっかり",
+                "たっぷり"
+              ],
+              "answer": 1,
+              "explanation_uz": "すっきりする = yengil tortmoq, tiniqlashmoq",
+              "tr": "Sochni kalta qildirib, yengillashgan (tetik) holatga keldim."
+            },
+            {
+              "id": "t11-v3-25",
+              "stem": "新しい仕事についたばかりで、少し（　）だ。",
+              "options": [
+                "不正",
+                "不安",
+                "不運",
+                "不明"
+              ],
+              "answer": 2,
+              "explanation_uz": "不安 = xavotir, tashvish, bezovtalik",
+              "tr": "Yangi ishga endi kirganim uchun, biroz xavotirdaman."
+            }
+          ]
+        },
+        {
+          "id": "v4",
+          "type": "paraphrase",
+          "instruction_jp": "＿＿に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zga ma'nosi eng yaqin variantni tanlang.",
+          "questions": [
+            {
+              "id": "t11-v4-26",
+              "stem": "あなたに、本当に【すまない】と思います。",
+              "options": [
+                "相談したい",
+                "会いたい",
+                "もうしわけない",
+                "何もしたくない"
+              ],
+              "answer": 3,
+              "explanation_uz": "すまない = kechirasiz, uzr → もうしわけない",
+              "tr": "Sizdan rostdan ham uzr so'rayman (afsusdaman)."
+            },
+            {
+              "id": "t11-v4-27",
+              "stem": "土曜日はデートなので、とても【わくわく】しています。",
+              "options": [
+                "幸せになって",
+                "楽しみにして",
+                "緊張して",
+                "心配して"
+              ],
+              "answer": 2,
+              "explanation_uz": "わくわくする = hayajon bilan kutmoq → 楽しみにして",
+              "tr": "Shanba kuni uchrashuv, shuning uchun juda intiqman (kutaman)."
+            },
+            {
+              "id": "t11-v4-28",
+              "stem": "明日、予定が【重なって】しまいました。",
+              "options": [
+                "急に予定が入って",
+                "同時に予定が入って",
+                "大切な予定が入って",
+                "難しい予定が入って"
+              ],
+              "answer": 2,
+              "explanation_uz": "予定が重なる = rejalar to'qnash kelmoq → 同時に予定が入って",
+              "tr": "Ertaga rejalar bir-birining ustiga tushib qoldi."
+            },
+            {
+              "id": "t11-v4-29",
+              "stem": "休みがとれず、【ダウンして】しまった。",
+              "options": [
+                "けがして",
+                "眠って",
+                "逃げて",
+                "倒れて"
+              ],
+              "answer": 4,
+              "explanation_uz": "ダウンする = holdan toymoq, yiqilmoq → 倒れて",
+              "tr": "Dam ololmay, holdan toyib (yiqilib) qoldim."
+            },
+            {
+              "id": "t11-v4-30",
+              "stem": "机の上が【ごちゃごちゃ】なので、かたづけてください。",
+              "options": [
+                "汚い",
+                "せまい",
+                "くさい",
+                "黒い"
+              ],
+              "answer": 1,
+              "explanation_uz": "ごちゃごちゃ = tartibsiz, alag'-chalag' → 汚い",
+              "tr": "Stol usti tartibsiz (alag'-chalag') bo'lgani uchun, yig'ishtiring."
+            }
+          ]
+        },
+        {
+          "id": "v5",
+          "type": "usage",
+          "instruction_jp": "次のことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Quyidagi so'zning eng to'g'ri ishlatilishini tanlang.",
+          "questions": [
+            {
+              "id": "t11-v5-31",
+              "stem": "つぶれる",
+              "options": [
+                "強い風で、その木はまん中からつぶれてしまった。",
+                "急に雨がつぶれ、急いで近くのお店に入った。",
+                "先日の大きな地震で、たくさんの家がつぶれた。",
+                "前から使っていた時計がつぶれて、動かなくなった。"
+              ],
+              "answer": 3,
+              "optsTr": [
+                "Kuchli shamoldan o'sha daraxt o'rtasidan 'ezildi' (noto'g'ri — 折れる kerak).",
+                "To'satdan yomg'ir 'ezildi', do'konga kirdim (noto'g'ri — 降る kerak).",
+                "Yaqindagi katta zilzilada ko'p uy quladi (vayron bo'ldi). (to'g'ri)",
+                "Eski soat 'ezilib', ishlamay qoldi (noto'g'ri — 壊れる kerak)."
+              ],
+              "tr": "つぶれる(潰れる) = ezilmoq, qulamoq, vayron bo'lmoq."
+            },
+            {
+              "id": "t11-v5-32",
+              "stem": "増す",
+              "options": [
+                "台風のため、風の強さが増している。",
+                "1日3時間勉強したので、彼の日本語はいきなり増した。",
+                "社長に、給料を増してくださいとお願いした。",
+                "大学に入ってから、友だちが増してうれしい。"
+              ],
+              "answer": 1,
+              "optsTr": [
+                "Tayfun tufayli shamol kuchi ortib boryapti. (to'g'ri)",
+                "Kuniga 3 soat o'qigani uchun, uning yaponchasi birdan 'ortdi' (noto'g'ri — 上達 kerak).",
+                "Rahbarga maoshni 'oshiring' deb so'radim (noto'g'ri — 上げる kerak).",
+                "Universitetga kirgach, do'stim 'ortib' xursandman (noto'g'ri — 増える kerak)."
+              ],
+              "tr": "増す(ます) = ko'paymoq, kuchaymoq, ortmoq."
+            },
+            {
+              "id": "t11-v5-33",
+              "stem": "におい",
+              "options": [
+                "この料理は、おいしそうなにおいがする。",
+                "黒いにおいを見て、マンションの火事に気がついた。",
+                "昨晩は、となりの家の大きなにおいが聞こえてきた。",
+                "今朝はいい天気で、空にいくつか白いにおいが出ている。"
+              ],
+              "answer": 1,
+              "optsTr": [
+                "Bu taomdan mazali hid keladi. (to'g'ri)",
+                "Qora 'hid'ni ko'rib, yong'inni payqadim (noto'g'ri — 煙 kerak).",
+                "Kecha qo'shni uyning katta 'hidi' eshitildi (noto'g'ri — 音 kerak).",
+                "Bugun havo yaxshi, osmonda bir nechta oq 'hid' bor (noto'g'ri — 雲 kerak)."
+              ],
+              "tr": "におい = hid, is."
+            },
+            {
+              "id": "t11-v5-34",
+              "stem": "声",
+              "options": [
+                "車の声がうるさくて、テレビの音が聞こえない。",
+                "駅まで走ったら、声が切れてしまった。",
+                "風邪をひいて、きのうから声が止まらない。",
+                "もっと他人の声に耳をかたむけたほうがよい。"
+              ],
+              "answer": 4,
+              "optsTr": [
+                "Mashina 'ovozi' shovqinli, televizor eshitilmaydi (noto'g'ri — 音 kerak).",
+                "Bekatga yugursam, 'ovozim' uzilib qoldi (noto'g'ri — 息 kerak).",
+                "Shamollab, kechadan beri 'ovozim' to'xtamayapti (noto'g'ri — せき kerak).",
+                "Boshqalarning ovoziga (fikriga) ko'proq quloq solgan ma'qul. (to'g'ri)"
+              ],
+              "tr": "声(こえ) = ovoz (odam/jonzot tovushi)."
+            },
+            {
+              "id": "t11-v5-35",
+              "stem": "あやしい",
+              "options": [
+                "今日は寒いので、あやしいものが食べたい。",
+                "帰宅すると、家の前にあやしい男が立っていた。",
+                "彼女は、親切であやしいので、みんなに人気がある。",
+                "この手帳は、なんでも書くことができて、とてもあやしい。"
+              ],
+              "answer": 2,
+              "optsTr": [
+                "Bugun sovuq, 'shubhali' narsa yegim keladi (noto'g'ri — あたたかい kerak).",
+                "Uyga qaytsam, uy oldida shubhali erkak turardi. (to'g'ri)",
+                "U mehribon va 'shubhali', hammaga yoqadi (noto'g'ri — やさしい kerak).",
+                "Bu daftarga hammasini yozsa bo'ladi, juda 'shubhali' (noto'g'ri — 便利 kerak)."
+              ],
+              "tr": "あやしい(怪しい) = shubhali, gumonli, g'alati."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name_jp": "文法",
+      "name_uz": "Grammatika",
+      "problems": [
+        {
+          "id": "g1",
+          "type": "grammar_form",
+          "instruction_jp": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Gapdagi ( ) ga qo'yish uchun eng mos grammatik shaklni tanlang.",
+          "questions": [
+            {
+              "id": "t11-g1-1",
+              "stem": "台風が来て、昨日は沖縄では大雨だった（　）。",
+              "options": [
+                "のは",
+                "とを",
+                "のを",
+                "とか"
+              ],
+              "answer": 4,
+              "explanation_uz": "〜とか = ...emish, ...deyishadi (eshitilgan, noaniq)",
+              "tr": "Tayfun kelib, kecha Okinavada kuchli yomg'ir bo'libdi (deyishadi)."
+            },
+            {
+              "id": "t11-g1-2",
+              "stem": "妻「明日からたばこを吸うのをやめてちょうだい。」夫「（　）厳しいことを言わないでよ。」",
+              "options": [
+                "こんなに",
+                "そんなに",
+                "あんなに",
+                "どんなに"
+              ],
+              "answer": 2,
+              "explanation_uz": "そんなに = unaqa, shunaqa (suhbatdosh aytganiga ishora)",
+              "tr": "Xotin: «Ertadan tamaki chekishni tashla.» Er: «Unaqa qattiq gaplarni aytma-da.»"
+            },
+            {
+              "id": "t11-g1-3",
+              "stem": "私は昨日から風邪（　）で、熱が少しある。",
+              "options": [
+                "っぱい",
+                "ほど",
+                "げ",
+                "気味"
+              ],
+              "answer": 4,
+              "explanation_uz": "〜気味 = ...ga moyil, ...nishonasi bor. 風邪気味 = shamollaganga o'xshash",
+              "tr": "Men kechadan beri shamollaganga o'xshab, ozroq isitmam bor."
+            },
+            {
+              "id": "t11-g1-4",
+              "stem": "近所へ散歩に行った（　）、スーパーで牛乳を買ってきました。",
+              "options": [
+                "かたがた",
+                "ついでに",
+                "かわりに",
+                "ままに"
+              ],
+              "answer": 2,
+              "explanation_uz": "〜ついでに = ...gan paytda birga, zayli bilan",
+              "tr": "Yaqin atrofga sayrga borgan paytim, zaodan sut ham olib keldim."
+            },
+            {
+              "id": "t11-g1-5",
+              "stem": "学校から家へ帰る（　）彼女に会ったので、道で少し話しました。",
+              "options": [
+                "途中まで",
+                "途中へ",
+                "途中で",
+                "途中から"
+              ],
+              "answer": 3,
+              "explanation_uz": "〜途中で = ...yo'lda, ...yo'l-yo'lakay",
+              "tr": "Maktabdan uyga qaytayotib yo'lda uni uchratdim, ko'chada ozroq gaplashdik."
+            },
+            {
+              "id": "t11-g1-6",
+              "stem": "この町は、駅を（　）発展してきた。",
+              "options": [
+                "中心とともに",
+                "中心として",
+                "中心において",
+                "中心にかけて"
+              ],
+              "answer": 2,
+              "explanation_uz": "〜を中心として = ...ni markaz qilib, ...atrofida",
+              "tr": "Bu shahar bekatni markaz qilib rivojlanib kelgan."
+            },
+            {
+              "id": "t11-g1-7",
+              "stem": "毎朝私は、ベランダの花に水を（　）。",
+              "options": [
+                "くれます",
+                "もらいます",
+                "やります",
+                "さしあげます"
+              ],
+              "answer": 3,
+              "explanation_uz": "やる = (pastga/o'simlik-hayvonga) bermoq. 水をやる = suv quymoq",
+              "tr": "Har kuni ertalab men balkondagi gullarga suv quyaman (beraman)."
+            },
+            {
+              "id": "t11-g1-8",
+              "stem": "彼女に会うのは、卒業以来3年（　）。",
+              "options": [
+                "よりだ",
+                "ながらだ",
+                "からだ",
+                "ぶりだ"
+              ],
+              "answer": 4,
+              "explanation_uz": "〜ぶり = ...dan keyin (vaqt o'tib qaytadan). 3年ぶり = 3 yildan keyin",
+              "tr": "Uni ko'rishim — bitirganimdan beri 3 yildan keyin (3 yil o'tib)."
+            },
+            {
+              "id": "t11-g1-9",
+              "stem": "弟は先生に何と（　）。",
+              "options": [
+                "お話しなさいましたか",
+                "話されましたか",
+                "おっしゃいましたか",
+                "申しましたか"
+              ],
+              "answer": 4,
+              "explanation_uz": "申す = 言う ning kamtarlik shakli (ukam — o'z guruh a'zosi). 申しましたか",
+              "tr": "Ukam o'qituvchiga nima dedi?"
+            },
+            {
+              "id": "t11-g1-10",
+              "stem": "あの子は、小さい子ども（　）、とてもかしこい。",
+              "options": [
+                "にしては",
+                "のあまり",
+                "であるからには",
+                "からして"
+              ],
+              "answer": 1,
+              "explanation_uz": "〜にしては = ...ga qaraganda (kutilganidan farqli)",
+              "tr": "U bola kichkina bola bo'lishiga qaramay, juda aqlli."
+            },
+            {
+              "id": "t11-g1-11",
+              "stem": "男の学生「ペンを忘れちゃった。」女の学生「私（　）、これを使ってよ。」",
+              "options": [
+                "のもよければ",
+                "のでよければ",
+                "がよいから",
+                "でよいから"
+              ],
+              "answer": 2,
+              "explanation_uz": "〜でよければ = ...bo'lsa ham bo'lsa, ...rozimisan. 私の(ペン)でよければ",
+              "tr": "O'g'il bola: «Ruchkamni unutibman.» Qiz bola: «Meniki bo'lsa ham bo'lsa, mana buni ishlat.»"
+            },
+            {
+              "id": "t11-g1-12",
+              "stem": "あまり時間がないから、食事を（　）、簡単なものにするつもりだ。",
+              "options": [
+                "するとしては",
+                "するとしようと",
+                "するとしても",
+                "するとしようなら"
+              ],
+              "answer": 3,
+              "explanation_uz": "〜としても = ...sa ham, ...bo'lgan taqdirda ham",
+              "tr": "Vaqt kam, shuning uchun ovqatlansak ham, oddiy narsa qilmoqchiman."
+            },
+            {
+              "id": "t11-g1-13",
+              "stem": "私はアイスクリームが大好きなので、お店で見かけると（　）。",
+              "options": [
+                "買おうとしています",
+                "買おうとはしません",
+                "買わないでいられます",
+                "買わないではいられません"
+              ],
+              "answer": 4,
+              "explanation_uz": "〜ないではいられない = ...masdan turolmaslik (chiday olmay qilib qo'yish)",
+              "tr": "Men muzqaymoqni juda yaxshi ko'raman, shuning uchun do'konda ko'rsam, sotib olmay turolmayman."
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "type": "sentence_order",
+          "instruction_jp": "次の文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Gapdagi ★ o'rniga tushadigan eng mos bo'lakni tanlang.",
+          "questions": [
+            {
+              "id": "t11-g2-14",
+              "options": [
+                "反して",
+                "予想に",
+                "人々の",
+                "多くの"
+              ],
+              "answer": 2,
+              "prefix": "きのうのゲームは",
+              "suffix": "Aチームが勝った。",
+              "starPos": 3,
+              "order": [
+                4,
+                3,
+                2,
+                1
+              ],
+              "explanation_uz": "To'g'ri tartib: 多くの人々の予想に反して (〜に反して = ...ga zid)",
+              "tr": "To'g'ri jumla: «Kechagi o'yin ko'pchilik odamlarning bashoratiga zid ravishda A jamoa yutdi.»"
+            },
+            {
+              "id": "t11-g2-15",
+              "options": [
+                "ものですが",
+                "お菓子を",
+                "こちらの",
+                "いただいた"
+              ],
+              "answer": 3,
+              "prefix": "よろしければ、",
+              "suffix": "どうぞ。",
+              "starPos": 3,
+              "order": [
+                4,
+                1,
+                3,
+                2
+              ],
+              "explanation_uz": "To'g'ri tartib: いただいたものですがこちらのお菓子を (いただく = «olmoq» kamtarlik)",
+              "tr": "To'g'ri jumla: «Agar mayli bo'lsa, mana bu — menga berilgan shirinlikdan, oling.»"
+            },
+            {
+              "id": "t11-g2-16",
+              "options": [
+                "会議で",
+                "かまわない",
+                "進めても",
+                "決まったように"
+              ],
+              "answer": 3,
+              "prefix": "では、このプロジェクトは、先日の",
+              "suffix": "でしょうか。",
+              "starPos": 3,
+              "order": [
+                1,
+                4,
+                3,
+                2
+              ],
+              "explanation_uz": "To'g'ri tartib: 会議で決まったように進めてもかまわない",
+              "tr": "To'g'ri jumla: «Demak, bu loyihani o'tgan kungi yig'ilishda hal qilingandek davom ettirsak bo'ladimi?»"
+            },
+            {
+              "id": "t11-g2-17",
+              "options": [
+                "一方",
+                "なる",
+                "前より",
+                "下手に"
+              ],
+              "answer": 2,
+              "prefix": "以前は毎日ピアノの練習をしていましたが、最近はしていないので、",
+              "suffix": "です。",
+              "starPos": 3,
+              "order": [
+                3,
+                4,
+                2,
+                1
+              ],
+              "explanation_uz": "To'g'ri tartib: 前より下手になる一方 (〜一方だ = tobora ...bo'lib bormoqda)",
+              "tr": "To'g'ri jumla: «Ilgari har kuni pianino mashq qilardim, lekin yaqinda qilmayapman, shuning uchun avvalgidan yomonlashib boryapman.»"
+            },
+            {
+              "id": "t11-g2-18",
+              "options": [
+                "なんと",
+                "土地を",
+                "争いは",
+                "めぐる"
+              ],
+              "answer": 4,
+              "prefix": "その村の人たちの",
+              "suffix": "数十年間も続いた。",
+              "starPos": 2,
+              "order": [
+                2,
+                4,
+                3,
+                1
+              ],
+              "explanation_uz": "To'g'ri tartib: 土地をめぐる争いはなんと (〜をめぐる = ...yuzasidan, ...haqidagi)",
+              "tr": "To'g'ri jumla: «O'sha qishloq aholisining yer ustidagi janjali nima-niki, o'nlab yillar davom etdi.»"
+            }
+          ]
+        },
+        {
+          "id": "g3",
+          "type": "text_grammar",
+          "instruction_jp": "つぎの文章を読んで、19から23の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "instruction_uz": "Matnni o'qib, 19-23 bo'sh joylarga eng mos variantni tanlang.",
+          "passage_title": "富士山のこと（張拓）",
+          "passage": "土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に{{19}}、前の日の夜はうれしくて、よく眠れませんでした。\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を{{20}}。本当にきれいでした。\nただ、残念だったのは、ごみがたくさん捨てられていたことです。{{21}}、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに{{22a}}富士山も、実際はこんなに{{22b}}ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\n帰ってきてから、パソコンで{{23}}、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
+          "passage_tr": "Shanba-yakshanba kunlari, Yaponiyaga kelganimdan beri birinchi marta Fuji tog'iga bordim. Yaponiyaga kelishimdan oldin, Yaponiya obrazini eng yaxshi ifodalovchi narsa — Fuji tog'i edi. Fuji tog'iga CHIQA OLAMAN deb o'ylaganimdan, oldingi kechasi xursandligimdan yaxshi uxlay olmadim. Do'stim bilan qatnashgan turimiz ertalab erta avtobusda jo'nab, avval avtobusda 5-bekatgacha borib, so'ng gid ortidan 8-bekatgacha chiqib, tog' kulbasida tunab, ertasi ertalab cho'qqini ko'zlash edi. Havo juda yaxshi bo'lgani uchun, cho'qqida «goraikou» deb ataladigan tong quyoshini KO'RA OLDIK. Rostdan ham go'zal edi. Faqat, afsuski, juda ko'p axlat tashlangani edi. SHUNING UCHUN, do'stim bilan tushayotganda axlat terishga qaror qildik. Olib yurgan xaltamizga topgan axlatni solib borib, 5-bekatga qaytar chog'imizda axlat xaltasi to'lib ketgandi. Uzoqdan qaraganda shunchalik GO'ZAL ko'rinadigan Fuji aslida shunchalik IFLOSLANGANini bilib, hafa bo'ldim. Gid ham Fuji axlati muammoga aylangan deb aytdi. Qaytib kelgach, kompyuterdan QIDIRIB KO'RGANIMDA, tog'ga chiqa turib axlat teradigan turlar ham bor ekan. Fujini toza qilish uchun, keyingi safar shunday turga qatnashmoqchiman.",
+          "questions": [
+            {
+              "id": "t11-g3-19",
+              "options": [
+                "登れると思うと",
+                "登れたと思うと",
+                "登れたと思ったら",
+                "登れと思ったら"
+              ],
+              "answer": 1,
+              "blankNo": "19",
+              "explanation_uz": "〜と思うと = ...deb o'ylasa (...ni o'ylab hayajon). 登れる = chiqa olish",
+              "tr": "富士山に[登れると思うと]、前の日…眠れませんでした = Fujiga CHIQA OLAMAN deb o'ylasam, oldingi kechasi uxlay olmadim."
+            },
+            {
+              "id": "t11-g3-20",
+              "options": [
+                "見られそうでした",
+                "見ることでした",
+                "見ることができました",
+                "見たいと思いました"
+              ],
+              "answer": 3,
+              "blankNo": "20",
+              "explanation_uz": "〜ことができる = ...a olmoq (imkoniyat). 見ることができました",
+              "tr": "朝日を[見ることができました] = tong quyoshini KO'RA OLDIK."
+            },
+            {
+              "id": "t11-g3-21",
+              "options": [
+                "ところで",
+                "そこで",
+                "ところが",
+                "それが"
+              ],
+              "answer": 2,
+              "blankNo": "21",
+              "explanation_uz": "そこで = shuning uchun, shu sababli (harakatga o'tish)",
+              "tr": "ごみが…捨てられていた。[そこで]、ごみを拾うことにしました = axlat tashlangan. SHUNING UCHUN, axlat terishga qaror qildik."
+            },
+            {
+              "id": "t11-g3-22",
+              "options": [
+                "きたない ／ よごれている",
+                "きたない ／ よごれていない",
+                "きれいな ／ よごれていない",
+                "きれいな ／ よごれている"
+              ],
+              "answer": 4,
+              "blankNo": "22",
+              "explanation_uz": "22-a きれいな (go'zal) ↔ 22-b よごれている (ifloslangan) — qarama-qarshilik",
+              "tr": "遠くからあんなに[きれいな]富士も、実際はこんなに[よごれている] = uzoqdan GO'ZAL, aslida IFLOSLANGAN."
+            },
+            {
+              "id": "t11-g3-23",
+              "options": [
+                "調べるものの",
+                "調べようと",
+                "調べるにしたら",
+                "調べたところ"
+              ],
+              "answer": 4,
+              "blankNo": "23",
+              "explanation_uz": "〜たところ = ...gan paytda, ...gach (ma'lum bo'ldi)",
+              "tr": "パソコンで[調べたところ]、ツアーもあるようです = kompyuterdan QIDIRIB KO'RGANIMDA, turlar ham bor ekan."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

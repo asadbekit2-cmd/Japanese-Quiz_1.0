@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>JLPT N3 — O'yin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Baloo+2:wght@500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/style.css?v=20260625" />
+</head>
+<body>
+  <canvas id="fx-canvas"></canvas>
+
+  <!-- ======== HOME / LEVEL MAP ======== -->
+  <section id="screen-home" class="screen active">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">日</span>
+        <div>
+          <h1>JLPT <b>N3</b></h1>
+          <p class="sub">直前対策 · o'yin tarzida</p>
+        </div>
+      </div>
+      <div class="stats-mini">
+        <span class="chip xp" title="Tajriba (XP)">⭐ <b id="hud-xp">0</b></span>
+        <span class="chip streak" title="Ketma-ket kunlar">🔥 <b id="hud-streak">0</b></span>
+      </div>
+    </header>
+
+    <div class="home-body">
+      <div class="home-hero">
+        <div class="hero-text">
+          <h2>Salom! 🎌</h2>
+          <p>Har bir bosqich — kitobdagi bitta mock test. Istalgan bosqichni tanlab o'ynashing mumkin. Xato qilsang — savol aylanib yana keladi.</p>
+        </div>
+        <div class="home-hero-btns">
+          <button id="btn-review" class="btn btn-review">🔁 Takrorlash<small id="review-count">0 ta</small></button>
+          <button id="btn-random-mock" class="btn btn-random">🎲 Random Mock<small>60 ta · 15 testdan</small></button>
+          <button id="btn-custom-quiz" class="btn btn-custom">⚙️ O'zim tuzaman<small>Dars + bo'lim tanlash</small></button>
+          <button id="btn-kanji-cards" class="btn btn-kanji">⚡ Kanji Cards<small>Tez yodlash</small></button>
+        </div>
+      </div>
+
+      <div class="progress-overview">
+        <div class="po-bar"><div id="po-fill" class="po-fill"></div></div>
+        <span id="po-label">0 / 15 bosqich</span>
+      </div>
+
+      <div id="level-map" class="level-map"><!-- levels injected --></div>
+    </div>
+  </section>
+
+  <!-- ======== QUIZ ======== -->
+  <section id="screen-quiz" class="screen">
+    <header class="quizbar">
+      <button id="btn-quit" class="icon-btn" title="Chiqish">✕</button>
+      <div class="qbar-progress"><div id="qbar-fill" class="qbar-fill"></div></div>
+      <div class="hearts" id="hearts" style="display:none"></div>
+    </header>
+
+    <div class="quiz-meta">
+      <span id="quiz-level-tag" class="lvl-tag"></span>
+      <span id="quiz-section-tag" class="sec-tag"></span>
+      <span id="quiz-counter" class="counter"></span>
+      <span id="quiz-timer" class="timer">⏱ 50:00</span>
+    </div>
+
+    <div id="quiz-body" class="quiz-body">
+      <div id="combo-flash" class="combo-flash"></div>
+      <div class="instruction" id="q-instruction"></div>
+      <div class="stem-card" id="q-stem"></div>
+      <div class="options" id="q-options"></div>
+    </div>
+
+    <div id="feedback" class="feedback">
+      <div class="fb-inner">
+        <div class="fb-head" id="fb-head"></div>
+        <div class="fb-expl" id="fb-expl"></div>
+      </div>
+      <button id="btn-next" class="btn btn-next">Davom</button>
+    </div>
+
+    <div class="quiz-footer">
+      <button id="btn-furigana" class="ghost-btn" title="Furigana ko'rsatish/yashirish">あ→ふりがな</button>
+      <button id="btn-check" class="btn btn-check" disabled>Tekshirish</button>
+    </div>
+  </section>
+
+  <!-- ======== RESULT ======== -->
+  <section id="screen-result" class="screen">
+    <div class="result-card">
+      <div class="result-emoji" id="res-emoji">🎉</div>
+      <h2 id="res-title">Bosqich tugadi!</h2>
+      <div class="stars" id="res-stars"></div>
+      <div class="res-grid">
+        <div class="res-cell"><span id="res-acc">0%</span><small>To'g'ri (birinchi urinishda)</small></div>
+        <div class="res-cell"><span id="res-xp">+0</span><small>XP</small></div>
+        <div class="res-cell"><span id="res-time">0:00</span><small>Vaqt</small></div>
+      </div>
+      <div id="res-unlock" class="res-unlock"></div>
+      <div class="result-actions">
+        <button id="btn-retry" class="btn btn-ghost">↻ Qayta</button>
+        <button id="btn-home" class="btn">🏠 Bosh sahifa</button>
+        <button id="btn-nextlevel" class="btn btn-primary">Keyingi bosqich →</button>
+      </div>
+    </div>
+
+    <!-- ❌ Xato savollar paneli -->
+    <div id="res-wrong-panel" class="res-wrong-panel" style="display:none">
+      <div class="res-wrong-header">
+        <span id="res-wrong-count" class="res-wrong-count"></span>
+        <button id="btn-wrong-practice" class="btn btn-practice">🎮 Mashq qil</button>
+      </div>
+      <div id="res-wrong-list" class="res-wrong-list"></div>
+    </div>
+  </section>
+
+  <!-- ======== KANJI CARDS SCREEN ======== -->
+  <section id="screen-kanji" class="screen">
+    <header class="kc-topbar">
+      <button id="kc-btn-back" class="icon-btn">←</button>
+      <div class="kc-title-wrap">
+        <span class="kc-title" id="kc-title">Kanji Cards</span>
+        <span class="kc-subtitle" id="kc-subtitle"></span>
+      </div>
+      <div class="kc-counts">
+        <span class="kc-known" id="kc-known-count">✓ 0</span>
+        <span class="kc-unknown" id="kc-unknown-count">✕ 0</span>
+      </div>
+    </header>
+
+    <!-- Progress bar -->
+    <div class="kc-progress">
+      <div class="kc-prog-bar"><div id="kc-prog-fill" class="kc-prog-fill"></div></div>
+      <span id="kc-prog-label" class="kc-prog-label">0 / 0</span>
+    </div>
+
+    <!-- Card area -->
+    <div class="kc-arena" id="kc-arena">
+      <!-- Swipe hint arrows -->
+      <div class="kc-hint-left" id="kc-hint-left">📤 Bilmadim</div>
+      <div class="kc-hint-right" id="kc-hint-right">Bildim 📥</div>
+
+      <!-- Card -->
+      <div class="kc-card-wrap" id="kc-card-wrap">
+        <div class="kc-card" id="kc-card">
+          <!-- Front -->
+          <div class="kc-front" id="kc-front">
+            <div class="kc-kanji" id="kc-kanji">漢字</div>
+            <div class="kc-front-hint">Bosing — orqa tomonini ko'ring</div>
+          </div>
+          <!-- Back -->
+          <div class="kc-back" id="kc-back">
+            <div class="kc-back-reading" id="kc-back-reading"></div>
+            <div class="kc-back-meaning" id="kc-back-meaning"></div>
+            <div class="kc-back-sentence" id="kc-back-sentence"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="kc-actions">
+      <button id="kc-btn-no" class="kc-btn kc-btn-no">← Bilmadim</button>
+      <button id="kc-btn-flip" class="kc-btn kc-btn-flip">🔄 Flip</button>
+      <button id="kc-btn-yes" class="kc-btn kc-btn-yes">Bildim →</button>
+    </div>
+  </section>
+
+  <!-- ======== KANJI CARDS RESULT ======== -->
+  <div id="kc-result-overlay" class="kc-result-overlay">
+    <div class="kc-result-box">
+      <div class="kc-result-emoji" id="kc-res-emoji">🏆</div>
+      <h2 class="kc-result-title" id="kc-res-title">Barakalla!</h2>
+      <div class="kc-res-stats">
+        <div class="kc-res-stat">
+          <span id="kc-res-known">0</span><small>Bildingiz</small>
+        </div>
+        <div class="kc-res-stat">
+          <span id="kc-res-total">0</span><small>Jami</small>
+        </div>
+        <div class="kc-res-stat">
+          <span id="kc-res-rounds">0</span><small>Tur</small>
+        </div>
+      </div>
+      <div class="kc-result-actions">
+        <button id="kc-res-retry" class="btn btn-ghost">↻ Qayta</button>
+        <button id="kc-res-home" class="btn btn-primary">🏠 Bosh sahifa</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== LEVEL OPTIONS SHEET ======== -->
+  <div id="level-options-sheet" class="lvl-sheet">
+    <div class="lvl-sheet-backdrop" id="lso-backdrop"></div>
+    <div class="lvl-sheet-panel">
+      <div class="lvl-sheet-handle"></div>
+      <div class="lvl-sheet-header">
+        <div>
+          <div id="lso-jp" class="lso-jp"></div>
+          <div id="lso-uz" class="lso-uz"></div>
+        </div>
+        <div id="lso-stars" class="lso-stars"></div>
+      </div>
+
+      <button id="btn-lso-all" class="btn lso-all-btn">▶ Barchasini boshlash <span id="lso-total" class="lso-total"></span></button>
+
+      <div class="lso-section-row">
+        <span class="lso-sec-badge voc">文字・語彙</span>
+      </div>
+      <div class="lso-chips" id="lso-vocab-chips"></div>
+
+      <div class="lso-section-row">
+        <span class="lso-sec-badge gram">文法</span>
+      </div>
+      <div class="lso-chips" id="lso-gram-chips"></div>
+
+      <button id="btn-lso-close" class="btn btn-ghost lso-close-btn">✕ Bekor qilish</button>
+    </div>
+  </div>
+
+  <!-- ======== EXAM SECTION BREAK (Random Mock) ======== -->
+  <div id="exam-section-break" class="exam-section-break">
+    <div class="esb-inner">
+      <div class="esb-badge" id="esb-badge">文字・語彙</div>
+      <div class="esb-prob-no" id="esb-prob-no">問題1</div>
+      <div class="esb-prob-name" id="esb-prob-name">漢字読み</div>
+      <div class="esb-count" id="esb-count"></div>
+      <div class="esb-progress-bar"><div class="esb-progress-fill" id="esb-fill"></div></div>
+      <button id="btn-esb-continue" class="btn esb-btn">続ける →</button>
+    </div>
+  </div>
+
+  <!-- ======== KANJI LESSON SELECTOR ======== -->
+  <div id="kc-selector" class="cqb-overlay">
+    <div class="cqb-backdrop" id="kc-sel-backdrop"></div>
+    <div class="cqb-panel">
+      <div class="cqb-header">
+        <div>
+          <div class="cqb-title">⚡ Kanji Cards</div>
+          <div class="cqb-sub">Darslarni tanlang (kanji_reading)</div>
+        </div>
+        <button id="kc-sel-close" class="icon-btn">✕</button>
+      </div>
+      <div id="kc-sel-levels" class="cqb-levels"><!-- JS injects --></div>
+      <div class="cqb-footer">
+        <button id="kc-sel-start" class="btn cqb-start-btn" disabled>⚡ Boshlash</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+
+  <!-- ======== CUSTOM QUIZ BUILDER OVERLAY ======== -->
+  <div id="cqb-overlay" class="cqb-overlay">
+    <div class="cqb-backdrop" id="cqb-backdrop"></div>
+    <div class="cqb-panel">
+      <div class="cqb-header">
+        <div>
+          <div class="cqb-title">⚙️ O'zim tuzaman</div>
+          <div class="cqb-sub">Dars va bo'limlarni tanlang</div>
+        </div>
+        <button id="cqb-close" class="icon-btn">✕</button>
+      </div>
+      <div id="cqb-levels" class="cqb-levels"><!-- JS injects level cards --></div>
+      <div class="cqb-footer">
+        <button id="cqb-start-btn" class="btn cqb-start-btn" disabled>▶ Boshlash</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- kuromoji (furigana) — mahalliy, offline ishlaydi -->
+  <script src="vendor/kuromoji.js"></script>
+  <script src="data/bundle.js?v=20260625"></script>
+  <script src="js/furigana.js?v=20260625"></script>
+  <script src="js/app.js?v=20260625"></script>
+</body>
+</html>
