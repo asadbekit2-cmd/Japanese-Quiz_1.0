@@ -1116,9 +1116,13 @@
     const card = KC.deck[KC.idx];
     KC.flipped = false;
 
-    // Reset card
+    // Reset card. The transition is disabled while removing "flipped" so the
+    // next card cannot briefly appear with the previous card's back side.
     const cardEl = $("#kc-card");
+    cardEl.style.transition = "none";
     cardEl.classList.remove("flipped", "fly-right", "fly-left");
+    void cardEl.offsetWidth; // force reflow before restoring the transition
+    cardEl.style.transition = "";
 
     $("#kc-kanji").textContent = card.kanji;
     $("#kc-back-reading").textContent = card.reading;
