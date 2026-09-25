@@ -1,0 +1,5 @@
+# Netlify Redirects
+/n3/*   /jlpt-n3-game/:splat   200
+/n4/*   /jlpt-n4-game/:splat   200
+/n5/*   /jlpt-n5-game/:splat   200
+/n2/*   /jlpt-n2-game/:splat   200

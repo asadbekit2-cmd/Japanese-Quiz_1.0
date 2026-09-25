@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>JLPT O'yin — Barcha Darajalar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Baloo+2:wght@500;600;700;800&display=swap" />
+  <style>
+    /* ── Design tokens (N3 bilan bir xil) ── */
+    :root {
+      --bg: #06070f; --bg2: #0a0d1a; --card: #0f1221; --card2: #141828;
+      --ink: #e8ecff; --muted: #6b739e; --line: #1e2340;
+      --brand: #7c5cff; --brand2: #4ecbff; --accent: #ff6eb4;
+      --ok: #22c96a; --bad: #ff4757; --gold: #ffd348;
+      --r: 16px; --r2: 22px;
+      --shadow: 0 8px 32px rgba(0,0,0,.6);
+      --shadow2: 0 2px 8px rgba(0,0,0,.4);
+      --jp: "Noto Sans JP", sans-serif;
+      --ui: "Baloo 2", "Noto Sans JP", sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html, body {
+      margin: 0; height: 100%; overflow: hidden;
+    }
+
+    body {
+      font-family: var(--ui);
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 900px 600px at 70% -20%, #1a0f3d 0%, transparent 65%),
+        radial-gradient(ellipse 700px 500px at -10% 100%, #071a33 0%, transparent 60%),
+        radial-gradient(ellipse 400px 400px at 100% 80%, #120820 0%, transparent 55%),
+        var(--bg);
+      display: flex;
+      flex-direction: column;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ── Topbar ── */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px 8px;
+      background: linear-gradient(180deg, rgba(10,11,22,.9) 0%, transparent 100%);
+      flex-shrink: 0;
+    }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .logo {
+      display: grid; place-items: center;
+      width: 48px; height: 48px; border-radius: 15px;
+      font-family: var(--jp); font-weight: 900; font-size: 24px; color: #fff;
+      background: linear-gradient(135deg, #8b5cf6, #ec4899);
+      box-shadow: 0 4px 20px rgba(139,92,246,.5), 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .brand h1 { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: .3px; }
+    .brand h1 b {
+      background: linear-gradient(90deg, var(--brand2), #a78bfa);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .brand .sub { margin: 0; color: var(--muted); font-size: 11.5px; font-family: var(--jp); letter-spacing: .5px; }
+    .stats-mini { display: flex; gap: 8px; }
+    .chip {
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      padding: 7px 13px; border-radius: 999px; font-size: 13.5px;
+      display: inline-flex; align-items: center; gap: 5px;
+      backdrop-filter: blur(10px);
+    }
+    .chip b { color: #fff; font-weight: 700; }
+    .chip.xp b { color: var(--gold); }
+    .chip.streak b { color: #ff9f43; }
+
+    /* ── Body ── */
+    .home-body {
+      flex: 1; overflow-y: auto; padding: 8px 18px 36px;
+      scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.08) transparent;
+    }
+    .home-body::-webkit-scrollbar { width: 4px; }
+    .home-body::-webkit-scrollbar-thumb { background: rgba(255,255,255,.08); border-radius: 4px; }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, rgba(20,24,45,.9), rgba(18,22,40,.95));
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--r2); padding: 22px 22px 20px;
+      box-shadow: var(--shadow); margin-top: 6px;
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 300px 200px at 90% -10%, rgba(124,92,255,.12), transparent 70%);
+      pointer-events: none;
+    }
+    .hero h2 { margin: 0 0 6px; font-size: 20px; font-weight: 800; }
+    .hero p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; max-width: 480px; }
+
+    /* ── Level grid ── */
+    .section-title {
+      font-size: 12px; font-weight: 700; color: var(--muted);
+      letter-spacing: 1px; text-transform: uppercase;
+      margin: 24px 2px 12px;
+    }
+
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .level-card {
+      position: relative; overflow: hidden;
+      border-radius: var(--r2);
+      padding: 20px 18px 18px;
+      border: 1px solid rgba(255,255,255,.06);
+      background: linear-gradient(160deg, var(--card), rgba(12,15,28,1));
+      box-shadow: var(--shadow2);
+      cursor: pointer;
+      transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s, border-color .2s;
+      text-decoration: none; color: inherit;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .level-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .level-card:active { transform: scale(.97); }
+
+    /* Glow overlay */
+    .level-card::before {
+      content: ""; position: absolute; inset: 0; opacity: 0;
+      transition: opacity .2s;
+      pointer-events: none; border-radius: inherit;
+    }
+    .level-card:hover::before { opacity: 1; }
+
+    /* N5 — yashil */
+    .card-n5 { border-color: rgba(34,201,106,.2); }
+    .card-n5::before { background: radial-gradient(ellipse 200px 150px at 0% 0%, rgba(34,201,106,.08), transparent); }
+    .card-n5:hover { border-color: rgba(34,201,106,.45); box-shadow: 0 0 0 1px rgba(34,201,106,.15), var(--shadow); }
+    .n5-color { color: #22c96a; }
+    .n5-bg { background: linear-gradient(135deg, #22c96a, #4ecbff); }
+
+    /* N4 — sariq */
+    .card-n4 { border-color: rgba(255,211,72,.2); }
+    .card-n4::before { background: radial-gradient(ellipse 200px 150px at 0% 0%, rgba(255,211,72,.08), transparent); }
+    .card-n4:hover { border-color: rgba(255,211,72,.45); box-shadow: 0 0 0 1px rgba(255,211,72,.15), var(--shadow); }
+    .n4-color { color: #ffd348; }
+    .n4-bg { background: linear-gradient(135deg, #ffd348, #ff9f43); }
+
+    /* N3 — to'q sariq (active) */
+    .card-n3 { border-color: rgba(124,92,255,.4); box-shadow: 0 0 0 1px rgba(124,92,255,.15), var(--shadow2); }
+    .card-n3::before { background: radial-gradient(ellipse 200px 150px at 0% 0%, rgba(124,92,255,.1), transparent); }
+    .card-n3:hover { border-color: rgba(124,92,255,.7); box-shadow: 0 0 0 1px rgba(124,92,255,.3), var(--shadow); }
+    .n3-color { color: #a78bfa; }
+    .n3-bg { background: linear-gradient(135deg, #7c5cff, #4ecbff); }
+
+    /* N2 — qizil */
+    .card-n2 { border-color: rgba(255,71,87,.2); }
+    .card-n2::before { background: radial-gradient(ellipse 200px 150px at 0% 0%, rgba(255,71,87,.08), transparent); }
+    .card-n2:hover { border-color: rgba(255,71,87,.45); box-shadow: 0 0 0 1px rgba(255,71,87,.15), var(--shadow); }
+    .n2-color { color: #ff4757; }
+    .n2-bg { background: linear-gradient(135deg, #ff4757, #ff6eb4); }
+
+    /* Card parts */
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; }
+    .card-badge {
+      width: 44px; height: 44px; border-radius: 13px;
+      display: grid; place-items: center;
+      font-family: var(--jp); font-weight: 900; font-size: 18px; color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,.3);
+      flex-shrink: 0;
+    }
+    .card-status {
+      font-size: 11px; font-weight: 700; padding: 4px 10px;
+      border-radius: 999px; border: 1px solid;
+    }
+    .status-soon {
+      background: rgba(255,255,255,.04); color: var(--muted);
+      border-color: rgba(255,255,255,.08);
+    }
+    .status-ready {
+      background: rgba(124,92,255,.12); color: #a78bfa;
+      border-color: rgba(124,92,255,.3);
+    }
+
+    .card-level-name {
+      font-size: 22px; font-weight: 900; letter-spacing: .5px;
+      line-height: 1;
+    }
+    .card-sub {
+      font-size: 12px; color: var(--muted); margin-top: 2px;
+      font-family: var(--jp);
+    }
+
+    .card-stats {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-top: 2px;
+    }
+    .stat-pill {
+      font-size: 11px; font-weight: 700;
+      padding: 3px 9px; border-radius: 999px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+      color: var(--muted);
+    }
+
+    .card-btn {
+      width: 100%; padding: 11px; border-radius: 12px;
+      font-family: var(--ui); font-size: 14px; font-weight: 800;
+      border: none; cursor: pointer; color: #fff;
+      transition: filter .15s, transform .1s;
+      margin-top: 2px;
+    }
+    .card-btn:hover { filter: brightness(1.12); }
+    .card-btn:active { transform: scale(.97); }
+    .card-btn.soon {
+      background: rgba(255,255,255,.06) !important;
+      color: var(--muted); cursor: default;
+    }
+    .card-btn.soon:hover { filter: none; }
+    .card-btn.n5-btn { background: linear-gradient(135deg, #1a6e3f, #0e4d36); }
+    .card-btn.n4-btn { background: linear-gradient(135deg, #6e5a0e, #4d400a); }
+    .card-btn.n3-btn { background: linear-gradient(135deg, #4a2fa3, #2d1f6e); }
+    .card-btn.n2-btn { background: linear-gradient(135deg, #6e1520, #4d0e16); }
+
+    /* Lock overlay for soon cards */
+    .level-card.soon-card {
+      cursor: default;
+    }
+    .lock-overlay {
+      position: absolute; inset: 0; border-radius: inherit;
+      background: rgba(6,7,15,.5);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; opacity: 0;
+      transition: opacity .2s;
+      pointer-events: none;
+    }
+    .soon-card:hover .lock-overlay { opacity: 1; }
+
+    /* N3 active badge */
+    .active-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #22c96a;
+      box-shadow: 0 0 6px #22c96a;
+      display: inline-block; margin-right: 5px;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .5; transform: scale(.7); }
+    }
+
+    /* ── Progress bar ── */
+    .global-progress { margin: 24px 2px 8px; }
+    .gp-label {
+      display: flex; justify-content: space-between;
+      font-size: 12px; color: var(--muted); font-weight: 600; margin-bottom: 8px;
+    }
+    .gp-bar {
+      height: 8px; background: rgba(255,255,255,.05);
+      border-radius: 999px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    .gp-fill {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, #22c96a, #ffd348, #7c5cff, #ff4757);
+      border-radius: 999px;
+      transition: width .8s cubic-bezier(.2,.8,.2,1);
+      box-shadow: 0 0 8px rgba(124,92,255,.4);
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: none; }
+    }
+    .hero        { animation: fadeUp .35s ease both; }
+    .section-title { animation: fadeUp .35s .05s ease both; }
+    .level-card  { animation: fadeUp .35s ease both; }
+    .level-grid .level-card:nth-child(1) { animation-delay: .08s; }
+    .level-grid .level-card:nth-child(2) { animation-delay: .13s; }
+    .level-grid .level-card:nth-child(3) { animation-delay: .18s; }
+    .level-grid .level-card:nth-child(4) { animation-delay: .23s; }
+
+    /* ── Responsive ── */
+    @media (max-width: 420px) {
+      .level-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .card-level-name { font-size: 19px; }
+      .card-badge { width: 38px; height: 38px; font-size: 16px; }
+    }
+    @media (min-width: 640px) {
+      .level-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Topbar ── -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">日</span>
+      <div>
+        <h1>JLPT <b>Study</b></h1>
+        <p class="sub">O'yin tarzida yapon tili</p>
+      </div>
+    </div>
+    <div class="stats-mini">
+      <span class="chip xp">⭐ <b id="total-xp">0</b></span>
+      <span class="chip streak">🔥 <b id="streak">0</b></span>
+    </div>
+  </header>
+
+  <!-- ── Body ── -->
+  <div class="home-body">
+
+    <!-- Hero -->
+    <div class="hero">
+      <h2>Qaysi darajada o'qiyapsiz? 🎌</h2>
+      <p>Har bir daraja — alohida o'yin. So'z boyligi, kanji va grammatikani o'yin tarzida mashq qiling. Darajani tanlab boshlang!</p>
+    </div>
+
+    <div class="section-title">Daraja tanlang</div>
+
+    <!-- Level kartalar -->
+    <div class="level-grid">
+
+      <!-- N5 -->
+      <div class="level-card card-n5 soon-card">
+        <div class="lock-overlay">🔒</div>
+        <div class="card-top">
+          <div class="card-badge n5-bg">N5</div>
+          <span class="card-status status-soon">Tez kunda</span>
+        </div>
+        <div>
+          <div class="card-level-name n5-color">N5</div>
+          <div class="card-sub">Boshlang'ich daraja</div>
+        </div>
+        <div class="card-stats">
+          <span class="stat-pill">~800 so'z</span>
+          <span class="stat-pill">~100 kanji</span>
+        </div>
+        <button class="card-btn soon" disabled>🔒 Tez kunda</button>
+      </div>
+
+      <!-- N4 -->
+      <div class="level-card card-n4 soon-card">
+        <div class="lock-overlay">🔒</div>
+        <div class="card-top">
+          <div class="card-badge n4-bg">N4</div>
+          <span class="card-status status-soon">Tez kunda</span>
+        </div>
+        <div>
+          <div class="card-level-name n4-color">N4</div>
+          <div class="card-sub">O'rta-quyi daraja</div>
+        </div>
+        <div class="card-stats">
+          <span class="stat-pill">~1500 so'z</span>
+          <span class="stat-pill">~300 kanji</span>
+        </div>
+        <button class="card-btn soon" disabled>🔒 Tez kunda</button>
+      </div>
+
+      <!-- N3 — active -->
+      <a class="level-card card-n3" href="./jlpt-n3-game/">
+        <div class="card-top">
+          <div class="card-badge n3-bg">N3</div>
+          <span class="card-status status-ready"><span class="active-dot"></span>Tayyor</span>
+        </div>
+        <div>
+          <div class="card-level-name n3-color">N3</div>
+          <div class="card-sub">O'rta daraja</div>
+        </div>
+        <div class="card-stats">
+          <span class="stat-pill">~3700 so'z</span>
+          <span class="stat-pill">~650 kanji</span>
+          <span class="stat-pill">15 test</span>
+        </div>
+        <button class="card-btn n3-btn">▶ Boshlash</button>
+      </a>
+
+      <!-- N2 -->
+      <div class="level-card card-n2 soon-card">
+        <div class="lock-overlay">🔒</div>
+        <div class="card-top">
+          <div class="card-badge n2-bg">N2</div>
+          <span class="card-status status-soon">Tez kunda</span>
+        </div>
+        <div>
+          <div class="card-level-name n2-color">N2</div>
+          <div class="card-sub">O'rta-yuqori daraja</div>
+        </div>
+        <div class="card-stats">
+          <span class="stat-pill">~6000 so'z</span>
+          <span class="stat-pill">~1000 kanji</span>
+        </div>
+        <button class="card-btn soon" disabled>🔒 Tez kunda</button>
+      </div>
+
+    </div>
+
+    <!-- Global progress -->
+    <div class="global-progress">
+      <div class="gp-label">
+        <span>Umumiy progress</span>
+        <span id="gp-text">N3 faol</span>
+      </div>
+      <div class="gp-bar">
+        <div class="gp-fill" id="gp-fill"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // XP va streak localStorage dan olish (N3 bilan umumiy)
+    const xpEl = document.getElementById('total-xp');
+    const streakEl = document.getElementById('streak');
+    const gpFill = document.getElementById('gp-fill');
+
+    try {
+      const xp = parseInt(localStorage.getItem('jlpt_xp') || '0');
+      const streak = parseInt(localStorage.getItem('jlpt_streak') || '0');
+      xpEl.textContent = xp;
+      streakEl.textContent = streak;
+
+      // N3 progress
+      const n3Progress = JSON.parse(localStorage.getItem('jlpt_n3_done') || '[]');
+      const pct = Math.round((n3Progress.length / 15) * 100);
+      gpFill.style.width = pct + '%';
+      if (pct > 0) {
+        document.getElementById('gp-text').textContent = `N3: ${pct}% (${n3Progress.length}/15)`;
+      }
+    } catch(e) {}
+  </script>
+
+</body>
+</html>
