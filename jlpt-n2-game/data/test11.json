@@ -1,0 +1,857 @@
+{
+  "id": 11,
+  "title_jp": "第11回 模擬テスト",
+  "title_uz": "11-test",
+  "minutes": 45,
+  "sections": [
+    {
+      "id": "vocab",
+      "name_jp": "文字・語彙",
+      "name_uz": "Kanji va lug'at",
+      "problems": [
+        {
+          "id": "v1",
+          "type": "kanji_reading",
+          "instruction_jp": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zning o'qilishi sifatida eng to'g'risini tanlang.",
+          "questions": [
+            {
+              "id": "t11-v1-1",
+              "options": [
+                "しょうかい",
+                "じょうがい",
+                "しょうがい",
+                "じょうかい"
+              ],
+              "answer": 3,
+              "tr": "Kechasi uxlamasdan yashash tartibiga o'tib, uyqu buzilishi (insomniya/disomniya) kasalligiga uchradim.",
+              "stem": "夜型の生活をしているうちに【睡眠障害】になってしまった。",
+              "reading": "しょうがい",
+              "explanation_uz": "障害 → しょうがい (buzilish, to'siq, xastalik)"
+            },
+            {
+              "id": "t11-v1-2",
+              "options": [
+                "そうとう",
+                "しょうとう",
+                "あいとう",
+                "そうおう"
+              ],
+              "answer": 1,
+              "tr": "Yerga tushadigan quyosh nurining 1 soatlik energiya miqdori insoniyat 1 yilda ishlatadigan miqdorga tengdir (mos keladi).",
+              "stem": "地球に降る太陽光の1時間のエネルギー量は、人類が1年間に使う量に【相当する】。",
+              "reading": "そうとう",
+              "explanation_uz": "相当 → そうとう (teng kelish, mos kelish)"
+            },
+            {
+              "id": "t11-v1-3",
+              "options": [
+                "けいこう",
+                "かたこう",
+                "けいむき",
+                "かたむき"
+              ],
+              "answer": 1,
+              "tr": "Tug'ilish kamayib, ota-onalar oldindan shoshilib bolalariga ortiqcha yordam berish moyilligi kuchaymoqda.",
+              "stem": "少子化が進み、親が先回りして子どもを助ける【傾向】が強い。",
+              "reading": "けいこう",
+              "explanation_uz": "傾向 → けいこう (moyillik, tendensiya)"
+            },
+            {
+              "id": "t11-v1-4",
+              "options": [
+                "たたき",
+                "かがやき",
+                "いき",
+                "みがき"
+              ],
+              "answer": 4,
+              "tr": "O'zimning kuchli tomonlarimni charxlab (sayqallab) borsam albatta muvaffaqiyatga erishaman deb ishonaman.",
+              "stem": "私は自分の長所を【磨き】続ければ必ず成功すると信じている。",
+              "reading": "みがき",
+              "explanation_uz": "磨く → みがく (sayqallamoq, charxlamoq, rivojlantirmoq)"
+            },
+            {
+              "id": "t11-v1-5",
+              "options": [
+                "はっこう",
+                "はっき",
+                "ほっこう",
+                "ほっき"
+              ],
+              "answer": 2,
+              "tr": "Inson qiyin vaziyatga tushgandagina o'zidagi bor kuch-qudratini to'liq namoyon eta oladi.",
+              "stem": "人間は困ったことが起きたときのほうが、持っている力を【発揮】できる。",
+              "reading": "はっき",
+              "explanation_uz": "発揮 → はっき (namoyon etish, ko'rsatish)"
+            }
+          ]
+        },
+        {
+          "id": "v2",
+          "type": "orthography",
+          "instruction_jp": "＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zning to'g'ri kanji yozuvini tanlang.",
+          "questions": [
+            {
+              "id": "t11-v2-6",
+              "options": [
+                "監獄",
+                "強罰",
+                "強盗",
+                "獄盗"
+              ],
+              "answer": 3,
+              "tr": "Dunyoning qariyb 30 ta davlati xalqaro qaroqchilar (bosqinchilar) guruhidan zarar ko'rmoqda.",
+              "stem": "世界の30カ国近くの国が、国際【ごうとう】団の被害を受けている。",
+              "reading": "ごうとう",
+              "explanation_uz": "強盗 → ごうとう (bosqinchi, qaroqchi, talonchi)"
+            },
+            {
+              "id": "t11-v2-7",
+              "options": [
+                "衝突",
+                "障突",
+                "衝突",
+                "将突"
+              ],
+              "answer": 1,
+              "tr": "To'qnashuvdan aynan oldin avtomatik tormozlanib to'xtaydigan avtomobil ishlab chiqildi.",
+              "stem": "【しょうとつ】直前で自動的にブレーキがかかって停止する車が開発された。",
+              "reading": "しょうとつ",
+              "explanation_uz": "衝突 → しょうとつ (to'qnashuv, zarba)"
+            },
+            {
+              "id": "t11-v2-8",
+              "options": [
+                "注くす",
+                "就くす",
+                "尽くす",
+                "着くす"
+              ],
+              "answer": 3,
+              "tr": "U sevgan insoni uchun borini fido qiladigan (jon kuydiradigan) fe'l-atvorli inson.",
+              "stem": "彼女は好きな相手に【つくす】タイプだ。",
+              "reading": "つくす",
+              "explanation_uz": "尽くす → つくす (borini bermoq, fido qilmoq, xizmat ko'rsatmoq)"
+            },
+            {
+              "id": "t11-v2-9",
+              "options": [
+                "仰意",
+                "掲意",
+                "傾意",
+                "敬意"
+              ],
+              "answer": 4,
+              "tr": "Hamkor davlatning madaniyatiga hurmat bilan yondashish xalqaro hamkorlikda muhim omildir.",
+              "stem": "相手の国の文化に【けいい】を払うことは、国際協力上大切なことだ。",
+              "reading": "けいい",
+              "explanation_uz": "敬意 → けいい (hurmat, ehtirom)"
+            },
+            {
+              "id": "t11-v2-10",
+              "options": [
+                "改める",
+                "政める",
+                "敢める",
+                "変める"
+              ],
+              "answer": 1,
+              "tr": "Universitetni bitirgandan so'ng bir necha yil yangi bitiruvchi sifatida ish qidirish imkoni bo'lishi uchun tizimni isloh qilish (o'zgartirish) lozim.",
+              "stem": "大学卒業後数年は新卒として就職活動をできるよう、システムを【あらためる】べきだ。",
+              "reading": "あらためる",
+              "explanation_uz": "改める → あらためる (isloh qilmoq, yangilamoq, to'g'rilamoq)"
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "type": "context",
+          "instruction_jp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Qavs ichiga eng mos keladigan so'z/affiksni tanlang.",
+          "questions": [
+            {
+              "id": "t11-v3-11",
+              "options": [
+                "感",
+                "性",
+                "料",
+                "度"
+              ],
+              "answer": 4,
+              "tr": "U yangi sportchiga nisbatan e'tibor darajasi (qiziqish darajasi) eng yuqoridir.",
+              "stem": "あの新人選手がいちばん注目（　）が高い。",
+              "explanation_uz": "注目度 (ちゅうもくど) = diqqat/e'tibor darajasi"
+            },
+            {
+              "id": "t11-v3-12",
+              "options": [
+                "高",
+                "最",
+                "名",
+                "長"
+              ],
+              "answer": 1,
+              "tr": "Mobil telefonlar so'nggi 10 yilda hayratlanarli darajada yuqori unumdorlikka (yuqori quvvatga) ega bo'ldi.",
+              "stem": "携帯電話はこの10年間で驚くほど（　）性能になっている。",
+              "explanation_uz": "高性能 (こうせいのう) = yuqori unumdorlik, yuqori sifatli texnik ko'rsatkich"
+            },
+            {
+              "id": "t11-v3-13",
+              "options": [
+                "済",
+                "下",
+                "案",
+                "的"
+              ],
+              "answer": 3,
+              "tr": "Bu hali loyiha rejasidan (qoralama taklifidan) boshqa narsa emas.",
+              "stem": "これはまだ計画（　）に過ぎません。",
+              "explanation_uz": "計画案 (けいかくあん) = reja loyihasi, taklif"
+            },
+            {
+              "id": "t11-v3-14",
+              "options": [
+                "代",
+                "異",
+                "単",
+                "別"
+              ],
+              "answer": 4,
+              "tr": "Ertaga guruhdan ajralib alohida (mustaqil) harakat qilamiz.",
+              "stem": "明日はグループから離れて（　）行動をとる。",
+              "explanation_uz": "別行動 (べつこうどう) = alohida/ajralib harakat qilish"
+            },
+            {
+              "id": "t11-v3-15",
+              "options": [
+                "機",
+                "器",
+                "技",
+                "基"
+              ],
+              "answer": 2,
+              "tr": "Oshxonada o't o'chirgich (ognetushitel) bo'lmaganida, yong'in chiqib ketgan bo'lardi.",
+              "stem": "台所に消火（　）がなかったら、火事になってしまっただろう。",
+              "explanation_uz": "消火器 (しょうかき) = o't o'chirish moslamasi (ognetushitel)"
+            }
+          ]
+        },
+        {
+          "id": "v4",
+          "type": "paraphrase",
+          "instruction_jp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Qavs ichiga eng mos keladigan so'zni tanlang.",
+          "questions": [
+            {
+              "id": "t11-v4-16",
+              "options": [
+                "正面",
+                "後者",
+                "前方",
+                "先頭"
+              ],
+              "answer": 3,
+              "tr": "Qariyb 50 metr oldindagi svetofordan chapga burilsangiz, dengiz ko'rinadi.",
+              "stem": "約50メートル（　）の信号を左に曲がると、海が見えてくる。",
+              "reading": "ぜんぽう",
+              "explanation_uz": "前方 (ぜんぽう) = old tomon, oldinda"
+            },
+            {
+              "id": "t11-v4-17",
+              "options": [
+                "正式",
+                "正確",
+                "正道",
+                "正規"
+              ],
+              "answer": 1,
+              "tr": "Ushbu kechada erkaklarning rasmiy kiyimi smokin (taksido) hisoblanadi.",
+              "stem": "このパーティーでは、男性の（　）な服装はタキシードです。",
+              "reading": "せいしき",
+              "explanation_uz": "正式 (せいしき) = rasmiy, qonuniy"
+            },
+            {
+              "id": "t11-v4-18",
+              "options": [
+                "適切",
+                "残念",
+                "器用",
+                "皮肉"
+              ],
+              "answer": 4,
+              "tr": "U professor savollarga piching (istehzoli) javob bergani uchun hamma uni yoqtirmaydi.",
+              "stem": "あの教授は質問に（　）な答え方をするので、嫌われている。",
+              "reading": "ひにく",
+              "explanation_uz": "皮肉 (ひにく) = kinoya, istehzo, piching"
+            },
+            {
+              "id": "t11-v4-19",
+              "options": [
+                "たびたび",
+                "どうにか",
+                "かなり",
+                "くれぐれも"
+              ],
+              "answer": 4,
+              "tr": "(Xatda) Havo sovib qolganligi sababli, iltimos, o'zingizni ehtiyot qiling.",
+              "stem": "（手紙で）寒くなりましたので（　）お体にお気をつけください。",
+              "reading": "くれぐれも",
+              "explanation_uz": "くれぐれも = qat'iy ravishda, iltimos (g'amxo'rlik ifodasi)"
+            },
+            {
+              "id": "t11-v4-20",
+              "options": [
+                "失業",
+                "失望",
+                "失脚",
+                "失礼"
+              ],
+              "answer": 2,
+              "tr": "Iqtisodiyot o'nglanmayotganligi sababli xalq vazirlar mahkamasidan hafsalasi pir bo'lmoqda (umidsizlanmoqda).",
+              "stem": "景気がなかなか回復せず、国民は内閣に（　）している。",
+              "reading": "しつぼう",
+              "explanation_uz": "失望 (しつぼう) = umidsizlik, hafsala pir bo'lishi"
+            },
+            {
+              "id": "t11-v4-21",
+              "options": [
+                "立ち",
+                "兼ね",
+                "巡り",
+                "触れ"
+              ],
+              "answer": 3,
+              "tr": "Onam ishonchli shifokor bilan uchrashish (taqdiri bog'lanish) nasib qilib, omadi chopdi.",
+              "stem": "母は信頼できる医師に（　）会えて運がよかった。",
+              "reading": "めぐりあう",
+              "explanation_uz": "巡り合う (めぐりあう) = taqdir taqozosi bilan uchrashmoq"
+            },
+            {
+              "id": "t11-v4-22",
+              "options": [
+                "ハード",
+                "ワイド",
+                "ユニーク",
+                "シンプル"
+              ],
+              "answer": 4,
+              "tr": "Aftidan, bu muammo o'ylagandek oddiy (sodda) emasga o'xshaydi, yechimiga ancha vaqt ketishi mumkin.",
+              "stem": "どうもこの問題は思ったほど（　）ではなさそうで、解決に時間がかかるかもしれない。",
+              "explanation_uz": "シンプル (simple) = oddiy, sodda"
+            }
+          ]
+        },
+        {
+          "id": "v5",
+          "type": "usage",
+          "instruction_jp": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zga ma'nosi eng yaqin so'zni tanlang.",
+          "questions": [
+            {
+              "id": "t11-v5-23",
+              "options": [
+                "急に",
+                "少しだけ",
+                "ますます",
+                "まあまあ"
+              ],
+              "answer": 3,
+              "tr": "Tanaka so'nggi paytlarda yanada (tobora) ochilib, go'zallashib ketdi.",
+              "stem": "田中さんはこのごろ、【一段と】きれいになった。",
+              "reading": "いちだんと",
+              "explanation_uz": "一段と ≈ ますます (yanada, tobora ko'proq)"
+            },
+            {
+              "id": "t11-v5-24",
+              "options": [
+                "上がった",
+                "落ちた",
+                "順調だ",
+                "不調だ"
+              ],
+              "answer": 4,
+              "tr": "Uning so'nggi paytlarda savdo ko'rsatkichlari qoniqarsiz (orqada, sust).",
+              "stem": "彼はこのところ営業成績が【ふるわない】。",
+              "reading": "ふるわない",
+              "explanation_uz": "ふるわない ≈ 不調だ (sust, ko'ngildagidek emas)"
+            },
+            {
+              "id": "t11-v5-25",
+              "options": [
+                "表現",
+                "基準",
+                "常識",
+                "方法"
+              ],
+              "answer": 2,
+              "tr": "U oddiy insonning o'lchov mezonlari bilan ta'riflab bo'lmaydigan shaxsdir.",
+              "stem": "彼は普通の人間の【ものさし】では語れない人物だ。",
+              "reading": "ものさし",
+              "explanation_uz": "ものさし ≈ 基準 (o'lchov mezoni, me'yor)"
+            },
+            {
+              "id": "t11-v5-26",
+              "options": [
+                "のんきな",
+                "気楽な",
+                "無愛想な",
+                "無遠慮な"
+              ],
+              "answer": 4,
+              "tr": "Birovning narsasini so'ramasdan ishlatish yuzsizlik (betgachoparlik/uyatsizlik)dir.",
+              "stem": "人のものを勝手に使うとは【あつかましい】やつだ。",
+              "reading": "あつかましい",
+              "explanation_uz": "あつかましい ≈ 無遠慮な (yuzsiz, mulohazasiz, betgachopar)"
+            },
+            {
+              "id": "t11-v5-27",
+              "options": [
+                "広告主",
+                "協力者",
+                "指導者",
+                "責任者"
+              ],
+              "answer": 1,
+              "tr": "Musiqiy ko'rsatuvning bosh homiysi (reklama beruvchisi) aniqlandi.",
+              "stem": "音楽番組の【スポンサー】が決まった。",
+              "explanation_uz": "スポンサー ≈ 広告主 (homiy, reklama beruvchi kompaniya)"
+            }
+          ]
+        },
+        {
+          "id": "v6",
+          "type": "usage_special",
+          "instruction_jp": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Berilgan so'zning gapda eng to'g'ri ishlatilgan variantini tanlang.",
+          "questions": [
+            {
+              "id": "t11-v6-28",
+              "options": [
+                "出版社と合流して、テレビドラマを製作する。",
+                "あの2人はひそかに合流しあっている。",
+                "先生たちと6時に駅で合流して、そこから食事に行こう。",
+                "クラス全員が合流して、野外学習に出かけた。"
+              ],
+              "answer": 3,
+              "tr": "合流 (gouryuu) = birlashish, uchrashib birga davom etish.",
+              "stem": "【合流】の使い方として最もよいものを選びなさい。",
+              "explanation_uz": "「駅で合流して〜」= vokzalda uchrashib/qo'shilib birga ovqatlangani boramiz (to'g'ri ishlatilish)."
+            },
+            {
+              "id": "t11-v6-29",
+              "options": [
+                "この週刊誌の記事は、ほとんどでたらめばかりだ。",
+                "でたらめを使って、授業をさぼった。",
+                "彼女がそんなにでたらめだとは気づかずに、だまされてしまった。",
+                "ずっと掃除していなかったので、部屋がでたらめだ。"
+              ],
+              "answer": 1,
+              "tr": "でたらめ (detarame) = asossiz uydirma, safsata, bema'nilik.",
+              "stem": "【でたらめ】の使い方として最もよいものを選びなさい。",
+              "explanation_uz": "「記事はでたらめばかりだ」= maqola uydirma va safsatalardan iborat (to'g'ri ishlatilish)."
+            },
+            {
+              "id": "t11-v6-30",
+              "options": [
+                "大学を新設する計画はどうやら肯定的に結論された。",
+                "上司はその企画に対し、肯定的な意見を持っている。",
+                "これだけ元気になれば外出も肯定的でしょうね。",
+                "その件は肯定的にお受けいたします。"
+              ],
+              "answer": 2,
+              "tr": "肯定的 (kouteiteki) = ijobiy, ma'qullovchi.",
+              "stem": "【肯定的】の使い方として最もよいものを選びなさい。",
+              "explanation_uz": "「肯定的な意見」= ijobiy/qo'llab-quvvatlovchi fikr (to'g'ri ishlatilish)."
+            },
+            {
+              "id": "t11-v6-31",
+              "options": [
+                "大統領の演説は要旨をおさえている。",
+                "この町は交通上の要旨として発達した。",
+                "論文には、その要旨を書いたものを付けてください。",
+                "今回の事件にはいろいろな要旨が関係している。"
+              ],
+              "answer": 3,
+              "tr": "要旨 (youshi) = asosiy mazmun, xulosa, tezis.",
+              "stem": "【要旨】の使い方として最もよいものを選びなさい。",
+              "explanation_uz": "「論文に要旨を付ける」= dissertatsiyaga uning qisqacha tezis/mazmunini ilova qilmoq (to'g'ri ishlatilish)."
+            },
+            {
+              "id": "t11-v6-32",
+              "options": [
+                "この事件の犯人を指定するのは難しい。",
+                "就職はその人の人生を指定するともいえる。",
+                "代表者は投票によって指定しようではないか。",
+                "パーティーの参加者は指定された服装で来てください。"
+              ],
+              "answer": 4,
+              "tr": "指定 (shitei) = belgilangan, maxsus ko'rsatilgan.",
+              "stem": "【指定】の使い方として最もよいものを選びなさい。",
+              "explanation_uz": "「指定された服装」= belgilangan kiyim shakli (dreskod) (to'g'ri ishlatilish)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name_jp": "文法",
+      "name_uz": "Grammatika",
+      "problems": [
+        {
+          "id": "g1",
+          "type": "grammar_form",
+          "instruction_jp": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Gapdagi qavs ichiga eng mos keluvchi grammatik shaklni tanlang.",
+          "questions": [
+            {
+              "id": "t11-g1-33",
+              "options": [
+                "よらず",
+                "はおろか",
+                "どころか",
+                "にかぎらず"
+              ],
+              "answer": 4,
+              "tr": "Germaniyada pivo nafaqat yozda, balki qishda ham juda ko'p iste'mol qilinadi.",
+              "stem": "ドイツではビールは夏（　）、冬にもよく飲まれている。",
+              "explanation_uz": "「〜に限らず」= nafaqat ..., balki boshqa payt/holatda ham."
+            },
+            {
+              "id": "t11-g1-34",
+              "options": [
+                "もので",
+                "ものの",
+                "ものか",
+                "ものなら"
+              ],
+              "answer": 2,
+              "tr": "Haydovchilik guvohnomasini yaqindagina olgan bo'lsam-da, mashina haydashga unchalik ishonchim yo'q.",
+              "stem": "まだ、免許を取ったばかりの（　）、運転に自信がありません。",
+              "explanation_uz": "「〜ものの」= ...bo'lsa-da / bo'lishiga qaramasdan."
+            },
+            {
+              "id": "t11-g1-35",
+              "options": [
+                "ありようがない",
+                "ありがたい",
+                "ありかねる",
+                "あり得なくない"
+              ],
+              "answer": 4,
+              "tr": "Bunday og'ir vaziyatda omon qolish imkonsizdek tuyulsa-da, bo'lishi mumkin bo'lmagan hodisa emas (bo'lishi mumkin).",
+              "stem": "その状況で助かるなんて不可能に思えますが、（　）ことです。",
+              "explanation_uz": "「あり得なくない」= bo'lishi ehtimoldan xoli emas (ikki karra inkor = tasdiq)."
+            },
+            {
+              "id": "t11-g1-36",
+              "options": [
+                "最初",
+                "開始",
+                "初めて",
+                "はじめ"
+              ],
+              "answer": 4,
+              "tr": "Boshida shahar hokimi turgan barcha xodimlar tabiiy ofatga tayyorgarlik mashg'ulotlarida qatnashdilar.",
+              "stem": "市長を（　）とする職員全員が、災害に備え訓練に取り組んだ。",
+              "explanation_uz": "「〜をはじめ（とする）」= ...boshchiligida, boshida ...bo'lgan barcha."
+            },
+            {
+              "id": "t11-g1-37",
+              "options": [
+                "行って",
+                "行った",
+                "行く",
+                "行こう"
+              ],
+              "answer": 2,
+              "tr": "O'g'lim 20 yil avval Amerikaga ketganicha, biror marta ham vataniga qaytib kelmadi.",
+              "stem": "息子は20年前にアメリカに（　）きり、一度も帰国していない。",
+              "explanation_uz": "「動詞た形 ＋ きり」= ...qilganicha boshqa qaytmaslik/o'zgarmaslik."
+            },
+            {
+              "id": "t11-g1-38",
+              "options": [
+                "言おうか",
+                "言うまいか",
+                "言えないか",
+                "言わないか"
+              ],
+              "answer": 4,
+              "tr": "«Yoqimli ishtaha» deb aytishar-aytmas, bolalar taomni yeyishga kirishib ketishdi.",
+              "stem": "「いただきます」と言ったか（　）のうちに、子どもたちは食べ始めた。",
+              "explanation_uz": "「〜たか〜ないかのうちに」= ...qilar-qilmas bilanoq."
+            },
+            {
+              "id": "t11-g1-39",
+              "options": [
+                "にあたる",
+                "による",
+                "における",
+                "にいたる"
+              ],
+              "answer": 3,
+              "tr": "Yaponiya ichki bozoridagi meva iste'moli hajmi so'nggi paytlarda kamayib bormoqda.",
+              "stem": "日本国内（　）果物の消費量は、最近減少している。",
+              "explanation_uz": "「〜における」= ...dagi / ...dagi sohada (joy va vaqt munosabati)."
+            },
+            {
+              "id": "t11-g1-40",
+              "options": [
+                "なにも",
+                "いつも",
+                "なんでも",
+                "どこも"
+              ],
+              "answer": 1,
+              "tr": "Dorini bir marta ichishni unutib qoldirgan bilan darrov o'lib qoladigan narsa emas-ku, bunchalik xavotirlanma.",
+              "stem": "1回薬を飲み忘れたからといって、（　）死ぬわけではないんだから、そんなに心配しなくていいよ。",
+              "explanation_uz": "「なにも〜わけではない」= darrov ...degani emas / aslo unday emas."
+            },
+            {
+              "id": "t11-g1-41",
+              "options": [
+                "あげるはずがない",
+                "あげることがない",
+                "あげないはずがない",
+                "あげないこともない"
+              ],
+              "answer": 4,
+              "tr": "Darhol qaytarib beradigan bo'lsang, senga qarz berib turmasligim ham mumkin emas (berishim mumkin).",
+              "stem": "すぐに返してくれるなら、お金を貸して（　）。",
+              "explanation_uz": "「〜ないこともない」= ...emas ham emas (qarz berishga tayyorman)."
+            },
+            {
+              "id": "t11-g1-42",
+              "options": [
+                "だれもが想像しただろう",
+                "だれが想像しただろう",
+                "だれでも想像できただろう",
+                "だれも想像できただろう"
+              ],
+              "answer": 2,
+              "tr": "Men bolaligimda ichki sayohatdan ko'ra xorijiy sayohat arzonroq bo'lishini kim ham tasavvur qilibdi deysiz?! (hech kim kutmagan).",
+              "stem": "私が子どものころ、国内旅行より海外旅行のほうが安くなるなんて（　）。",
+              "explanation_uz": "「だれが〜だろう（か）」= kim ham o'ylabdi deysiz (inkor ma'nosidagi ritorik savol)."
+            },
+            {
+              "id": "t11-g1-43",
+              "options": [
+                "いないからこそ",
+                "いなくもないからこそ",
+                "いないからといって",
+                "いないことはないから"
+              ],
+              "answer": 3,
+              "tr": "Qoidaga amal qilayotganlar deyarli yo'qligi sababli deb, siz ham qoidani buzishingiz mumkin degani emas.",
+              "stem": "決まりを守っている人がほとんど（　）、あなたも守らなくていいわけではない。",
+              "explanation_uz": "「〜からといって（〜わけではない）」= ...bo'lgani sababli deb aslo ...degani emas."
+            },
+            {
+              "id": "t11-g1-44",
+              "options": [
+                "おこしください",
+                "おまいりください",
+                "こされてください",
+                "うかがってください"
+              ],
+              "answer": 1,
+              "tr": "Kompaniyamiz suhbatida qatnashuvchilar 10-sana soat 10:00 gacha bosh ofis binosiga tashrif buyurishingiz so'raladi.",
+              "stem": "当社の面接を受ける方は、10日の10時までに本社ビルに（　）。",
+              "explanation_uz": "「お越しください」= kelishingizni so'raymiz (kelmoq fe'lining hurmat shakli)."
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "type": "sentence_order",
+          "instruction_jp": "次の文の＿★＿に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Gapdagi yulduzcha (★) o'rniga keladigan eng to'g'ri variantni tanlang.",
+          "questions": [
+            {
+              "id": "t11-g2-45",
+              "options": [
+                "効くが",
+                "人に",
+                "アレルギー",
+                "よっては"
+              ],
+              "answer": 4,
+              "tr": "Bu dori yaxshi ta'sir qiladi-yu, lekin ba'zi odamlarda allergiya qo'zg'atishi mumkinligi tufayli ehtiyotkorlik zarur.",
+              "explanation_uz": "Tartib: 効くが(1) 人に(2) よっては(4) アレルギー(3) → Yulduzcha 3-o'rinda: よっては(4)",
+              "prefix": "この薬はよく",
+              "suffix": "を起こすので、注意が必要だ。",
+              "starPos": 3,
+              "order": [
+                1,
+                2,
+                4,
+                3
+              ]
+            },
+            {
+              "id": "t11-g2-46",
+              "options": [
+                "予想した",
+                "基づいて",
+                "結果",
+                "に"
+              ],
+              "answer": 1,
+              "tr": "O'tgan 10 yillik ma'lumotlarga asoslanib qilingan prognoz xulosasiga ko'ra, bolalar soni kamayishda davom etsa kerak.",
+              "explanation_uz": "Tartib: に(4) 基づいて(2) 予想した(1) 結果(3) → Yulduzcha 3-o'rinda: 予想した(1)",
+              "prefix": "過去10年間のデータ",
+              "suffix": "、これからも子どもは減り続けるだろう。",
+              "starPos": 3,
+              "order": [
+                4,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "id": "t11-g2-47",
+              "options": [
+                "また忘れて",
+                "ことか",
+                "注意された",
+                "わからないのに"
+              ],
+              "answer": 2,
+              "tr": "Vazifani unutib qoldirmaslik haqida necha bor ogohlantirilganimni bilmayman-u, ammo yana unutib qo'yibman.",
+              "explanation_uz": "Tartib: 注意された(3) ことか(2) わからないのに(4) また忘れて(1) → Yulduzcha 2-o'rinda: ことか(2)",
+              "prefix": "宿題を忘れないように何度",
+              "suffix": "しまった。",
+              "starPos": 2,
+              "order": [
+                3,
+                2,
+                4,
+                1
+              ]
+            },
+            {
+              "id": "t11-g2-48",
+              "options": [
+                "あわてて",
+                "にせよ",
+                "ばかなことを",
+                "いた"
+              ],
+              "answer": 4,
+              "tr": "U paytda sarosimada bo'lgan taqdirimda ham, bema'ni ish qilib qo'yganimdan pushaymonman.",
+              "explanation_uz": "Tartib: あわてて(1) いた(4) にせよ(2) ばかなことを(3) → Yulduzcha 2-o'rinda: いた(4)",
+              "prefix": "あのときは",
+              "suffix": "してしまったと後悔している。",
+              "starPos": 2,
+              "order": [
+                1,
+                4,
+                2,
+                3
+              ]
+            },
+            {
+              "id": "t11-g2-49",
+              "options": [
+                "しっかりしていても",
+                "兄のほうが",
+                "よい",
+                "いえば"
+              ],
+              "answer": 1,
+              "tr": "Yosh jihatidan qaralsa akasi ko'proq mustaqil va hushyor bo'lishi kerak bo'lsa-da, ukasi ancha jiddiyroq.",
+              "explanation_uz": "Tartib: いえば(4) 兄のほうが(2) しっかりしていても(1) よい(3) → Yulduzcha 3-o'rinda: しっかりしていても(1)",
+              "prefix": "年齢から",
+              "suffix": "はずなのに、弟のほうがしっかりしている。",
+              "starPos": 3,
+              "order": [
+                4,
+                2,
+                1,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g3",
+          "type": "text_grammar",
+          "instruction_jp": "次の文章を読んで、50から54の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Matnni o'qib, 50-54 bo'sh o'rinlarga eng mos keluvchi javobni tanlang.",
+          "passage": "ほんの数十年前は、たばこを吸うことは大人の男性にとって、悪いこと【 50 】当然のことと思われていた。新幹線も禁煙車両は1両だけだった。1980年、たばこの煙が嫌いな人が集まって当時の国鉄（今のJR）と国を相手に、「他人のたばこの煙を吸わない権利」を求める裁判を起こした。\n　裁判は7年もかかったあげく、結局【 51 】。判決理由は「列車の中で隣の人のたばこの煙を吸わされるのは一時的なこと。たばこを吸うのは日本社会では普通のこと」ということだった。\n　しかし、訴えた人々は、【 52 】がっかりも怒りもしなかった。なぜならば「私もたばこはいやだ」と言い出す人が増えて、国鉄もその声を無視することができなくなり、すでに新幹線の車両の7割が禁煙になっていた。事実上は勝ったと言えるからだ。\n　その後、たばこを吸っている本人よりも、隣でその煙を吸ってしまう人のほうが煙の【 53 】ことがわかって、いっそう分煙対策（注）が進んだ。\n　2003年には「健康増進法」という法律もできて、病院や学校など公共の場はほとんどが禁煙になった。歩きたばこを禁止する町も出てきた。\n　今やたばこを吸う人の肩身はますます狭くなり、限られた場所でこっそり吸うしかなくなった。そして2010年にはたばこが大幅に値上げされた。近い将来には1箱1000円になるとも言われている。そうなると【 54 】得ない人もさらに増えるだろう。\n（注）分煙＝たばこを吸う場所や人を分けること",
+          "questions": [
+            {
+              "id": "t11-g3-50",
+              "options": [
+                "以上に",
+                "というより",
+                "とすれば",
+                "にかけては"
+              ],
+              "answer": 2,
+              "tr": "O'n yillar oldin chekish katta yoshli erkaklar uchun yomon narsa bo'lishdan ko'ra, tabiiy hol deb qaralardi.",
+              "explanation_uz": "「〜というより（当然のこと）」= ...dan ko'ra tabiiy holat deb.",
+              "blankNo": 50
+            },
+            {
+              "id": "t11-g3-51",
+              "options": [
+                "訴えは認められた",
+                "訴えは認められなかった",
+                "訴えを認めがたかった",
+                "訴えを認めかねた"
+              ],
+              "answer": 2,
+              "tr": "Sud 7 yil davom etgan bo'lsa-da, oxir-oqibat da'vo qanoatlantirilmadi (rad etildi).",
+              "explanation_uz": "「訴えは認められなかった」= da'vo qabul qilinmadi / rad etildi.",
+              "blankNo": 51
+            },
+            {
+              "id": "t11-g3-52",
+              "options": [
+                "負けただけあって",
+                "負けたからといって",
+                "負けたとしたら",
+                "負けたとしても"
+              ],
+              "answer": 2,
+              "tr": "Biroq da'vogarlar sudda yutqazgan bo'lsalar-da, na xafa bo'lishdi va na g'azablanishdi.",
+              "explanation_uz": "「負けたからといって（〜ない）」= mag'lub bo'lgani sababli deb aslo tushkunlikka tushmadilar.",
+              "blankNo": 52
+            },
+            {
+              "id": "t11-g3-53",
+              "options": [
+                "害はない",
+                "害が少ない",
+                "害が大きい",
+                "害が変わらない"
+              ],
+              "answer": 3,
+              "tr": "...tutunni passiv yutayotgan yonidagi odamga zarari kattaroqligi aniqlandi.",
+              "explanation_uz": "「害が大きい」= zarari kattaroq bo'lishi.",
+              "blankNo": 53
+            },
+            {
+              "id": "t11-g3-54",
+              "options": [
+                "禁煙し",
+                "たばこを吸わざるを",
+                "たばこを吸い",
+                "禁煙せざるを"
+              ],
+              "answer": 4,
+              "tr": "Bunday holatda chekishni tashlashga majbur bo'ladiganlar soni yanada ortadi.",
+              "explanation_uz": "「禁煙せざるを得ない」= chekishni tashlashga majbur bo'lmoq.",
+              "blankNo": 54
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
