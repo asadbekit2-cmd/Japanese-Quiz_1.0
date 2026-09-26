@@ -1,0 +1,878 @@
+{
+  "id": 2,
+  "title_jp": "第2回 模擬テスト",
+  "title_uz": "2-test",
+  "minutes": 45,
+  "sections": [
+    {
+      "id": "vocab",
+      "name_jp": "文字・語彙",
+      "name_uz": "Kanji va lug'at",
+      "problems": [
+        {
+          "id": "v1",
+          "type": "kanji_reading",
+          "instruction_jp": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zning o'qilishi sifatida eng to'g'risini tanlang.",
+          "questions": [
+            {
+              "id": "t2-v1-1",
+              "options": [
+                "はめられる",
+                "おさめられる",
+                "とられる",
+                "しばられる"
+              ],
+              "answer": 4,
+              "tr": "Internet muhiti yaxshilansa, ofisga bog'lanib qolmasdan (cheklanmasdan), qayerda bo'lsa ham ishlash mumkin.",
+              "stem": "ネット環境が整えばオフィスに【縛られる】ことなく、どこにいても仕事ができる。",
+              "reading": "しばられる",
+              "explanation_uz": "縛る → しばる (bog'lamoq, cheklamoq)"
+            },
+            {
+              "id": "t2-v1-2",
+              "options": [
+                "そうぞう",
+                "ずうずう",
+                "あらあら",
+                "いまいま"
+              ],
+              "answer": 1,
+              "tr": "Poyezd ichida ko'plab bolalar ketayotgani sababli juda shovqin-suronli edi.",
+              "stem": "電車の中は、たくさんの子どもが乗っていて【騒々しかった】。",
+              "reading": "そうぞうしかった",
+              "explanation_uz": "騒々しい → そうぞうしい (shovqinli, g'ovur-g'uvur)"
+            },
+            {
+              "id": "t2-v1-3",
+              "options": [
+                "ちょうし",
+                "ちょうじ",
+                "しゅうじ",
+                "じゅうし"
+              ],
+              "answer": 4,
+              "tr": "Bizning kompaniya bu yildan suhbat sonini ko'paytirib, bilimdan ko'ra shaxsiyatga ahamiyat berib (muhim deb bilib) xodimlarni qabul qiladi.",
+              "stem": "我が社は今年から面接の回数を増やして、知識より人物【重視】で社員を採用する。",
+              "reading": "じゅうし",
+              "explanation_uz": "重視 → じゅうし (muhim deb bilish, ahamiyat qaratish)"
+            },
+            {
+              "id": "t2-v1-4",
+              "options": [
+                "こうかん",
+                "ごうがん",
+                "こうがん",
+                "ごうかん"
+              ],
+              "answer": 1,
+              "tr": "Xaridlar orqali to'plangan ballarni tovar kuponlariga almashtirish mumkin.",
+              "stem": "お買い物でためたポイントは、商品券に【交換】できます。",
+              "reading": "こうかん",
+              "explanation_uz": "交換 → こうかん (almashtirish, o'zaro almashuv)"
+            },
+            {
+              "id": "t2-v1-5",
+              "options": [
+                "ほうぞう",
+                "ほうそう",
+                "ほうそう",
+                "ほうぞう"
+              ],
+              "answer": 3,
+              "tr": "Supermarketlarda oziq-ovqatlarni qadoqlashni (o'rab-chirmashni) kamaytirish bo'yicha harakatlar olib borilmoqda.",
+              "stem": "スーパーでは食品の【包装】を少なくする活動が進んでいる。",
+              "reading": "ほうそう",
+              "explanation_uz": "包装 → ほうそう (qadoqlash, o'rash)"
+            }
+          ]
+        },
+        {
+          "id": "v2",
+          "type": "orthography",
+          "instruction_jp": "＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zning to'g'ri kanji yozuvini tanlang.",
+          "questions": [
+            {
+              "id": "t2-v2-6",
+              "options": [
+                "暖房",
+                "暖冒",
+                "断房",
+                "断冒"
+              ],
+              "answer": 1,
+              "tr": "Quyosh energiyasi hosil qiladigan issiqlik isitish tizimiga, yorug'lik esa elektrga ishlatilishi mumkin.",
+              "stem": "太陽エネルギーが生み出す熱は【だんぼう】に、光は電気に利用できる。",
+              "reading": "だんぼう",
+              "explanation_uz": "暖房 → だんぼう (isitish tizimi)"
+            },
+            {
+              "id": "t2-v2-7",
+              "options": [
+                "勘違い",
+                "肝違い",
+                "感違い",
+                "塞違い"
+              ],
+              "answer": 1,
+              "tr": "U ikki kishini er-xotin deb yanglish (noto'g'ri tushunadigan) o'ylaydigan odamlar ko'p.",
+              "stem": "あの2人は夫婦だと【かんちがい】している人が多い。",
+              "reading": "かんちがい",
+              "explanation_uz": "勘違い → かんちがい (yanglishish, noto'g'ri tushunish)"
+            },
+            {
+              "id": "t2-v2-8",
+              "options": [
+                "焦らして",
+                "燃らして",
+                "照らして",
+                "烈らして"
+              ],
+              "answer": 3,
+              "tr": "Umumiy qoidalar (aql-idrok) bilan qiyoslab (solishtirib) ko'rsang, hozir nima qilishing kerakligi ayon bo'ladi.",
+              "stem": "常識に【てらして】考えてみれば、君が今、何をすべきかわかるだろう。",
+              "reading": "てらして",
+              "explanation_uz": "照らす → てらす (solishtirmoq, qiyoslamoq; yoritmoq)"
+            },
+            {
+              "id": "t2-v2-9",
+              "options": [
+                "地敷",
+                "地版",
+                "地番",
+                "地盤"
+              ],
+              "answer": 4,
+              "tr": "Bu atrofda zilzila oqibatida yer poydevori (tuproq qatlami) cho'kib ketdi.",
+              "stem": "このあたりは地震で【じばん】が沈んでしまった。",
+              "reading": "じばん",
+              "explanation_uz": "地盤 → じばん (yer sathi, poydevor tuproq)"
+            },
+            {
+              "id": "t2-v2-10",
+              "options": [
+                "汚洗",
+                "御染",
+                "汚染",
+                "冒染"
+              ],
+              "answer": 3,
+              "tr": "Zavod halokati tufayli zararli moddalar oqib, daryo ifloslandi.",
+              "stem": "工場の事故で有害物質が流れ、川が【おせん】された。",
+              "reading": "おせん",
+              "explanation_uz": "汚染 → おせん (ifloslanish, zaharlanish)"
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "type": "context",
+          "instruction_jp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Qavs ichiga eng mos keladigan so'z/affiksni tanlang.",
+          "questions": [
+            {
+              "id": "t2-v3-11",
+              "options": [
+                "無",
+                "反",
+                "非",
+                "不"
+              ],
+              "answer": 3,
+              "tr": "Hindistonlik Gandi zo'ravonliksiz (tinchlik) tamoyiliga tayanib, mustaqillik harakatiga boshchilik qildi.",
+              "stem": "インドのガンジーは（　）暴力を信条に独立運動を指導した。",
+              "explanation_uz": "非暴力 (ひぼうりょく) = zo'ravonliksizlik tamoyili"
+            },
+            {
+              "id": "t2-v3-12",
+              "options": [
+                "人",
+                "風",
+                "流",
+                "派"
+              ],
+              "answer": 4,
+              "tr": "Yamada janoblari o'ziga xos uslubdagi (individual tipdagi) aktyor sifatida faoliyat yuritmoqda.",
+              "stem": "山田氏は、個性（　）俳優として活躍している。",
+              "explanation_uz": "個性派 (こせいは) = o'ziga xos individual yo'nalishga ega bo'lgan shaxs/aktyor"
+            },
+            {
+              "id": "t2-v3-13",
+              "options": [
+                "点",
+                "見",
+                "場",
+                "所"
+              ],
+              "answer": 1,
+              "tr": "Barcha xodimlardan teatrni yaxshilash nuqtalari (takliflari) so'raladi.",
+              "stem": "全社員に劇場の改善（　）を開く。",
+              "explanation_uz": "改善点 (かいぜんてん) = yaxshilanishi kerak bo'lgan jihatlar/nuqtalar"
+            },
+            {
+              "id": "t2-v3-14",
+              "options": [
+                "方",
+                "側",
+                "界",
+                "世"
+              ],
+              "answer": 3,
+              "tr": "Tabiat olami qonuniyatlariga qarshi chiqib bo'lmaydi.",
+              "stem": "自然（　）の法則には逆らえない。",
+              "explanation_uz": "自然界 (しぜんかい) = tabiat olami / tabiat dunyosi"
+            },
+            {
+              "id": "t2-v3-15",
+              "options": [
+                "近",
+                "同",
+                "何",
+                "当"
+              ],
+              "answer": 2,
+              "tr": "Bolalar tengdosh bo'lganlari sababli, darrov do'stlashib ketishdi.",
+              "stem": "子どもたちは（　）年齢とあって、すぐに仲よくなった。",
+              "explanation_uz": "同年齢 (どうねんれい) = tengdosh, bir yoshdagi"
+            }
+          ]
+        },
+        {
+          "id": "v4",
+          "type": "paraphrase",
+          "instruction_jp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Gapdagi ( ) ga ma'no jihatidan eng mos keladigan so'zni tanlang.",
+          "questions": [
+            {
+              "id": "t2-v4-16",
+              "options": [
+                "制作",
+                "工事",
+                "閉鎖",
+                "更新"
+              ],
+              "answer": 4,
+              "tr": "To'garakning veb-saytiga «Tadbirlar ma'lumoti»ni qo'shib, yangiladik (update qildik).",
+              "stem": "サークルのホームページに「イベント情報」を追加し、（　）した。",
+              "explanation_uz": "更新 (こうしん) = yangilash, yangi ma'lumot kiritish"
+            },
+            {
+              "id": "t2-v4-17",
+              "options": [
+                "上等",
+                "優秀",
+                "有効",
+                "優良"
+              ],
+              "answer": 2,
+              "tr": "Eng a'lo natija ko'rsatgan talabaga universitet tomonidan rektor mukofoti beriladi.",
+              "stem": "最も（　）な成績の学生には、大学から学長賞が贈られます。",
+              "explanation_uz": "優秀 (ゆうしゅう) = a'lo, yetakchi, iqtidorli"
+            },
+            {
+              "id": "t2-v4-18",
+              "options": [
+                "重視",
+                "指導",
+                "活用",
+                "刺激"
+              ],
+              "answer": 4,
+              "tr": "Xarid qilish kabi kundalik odat iste'molni rag'batlantirib (kuchaytirib), jamiyatni jonlantiradi.",
+              "stem": "買い物という日常的な行いが、消費を（　）して世の中を元気にする。",
+              "explanation_uz": "刺激 (しげき) = rag'batlantirish, qo'zg'atish"
+            },
+            {
+              "id": "t2-v4-19",
+              "options": [
+                "いらいら",
+                "ぶつぶつ",
+                "のろのろ",
+                "まごまご"
+              ],
+              "answer": 1,
+              "tr": "Avtobus aslo kelavermagach, kutayotgan odamlar asta-sekin asabiylasha (g'azablana) boshladi.",
+              "stem": "バスがなかなか来なくて、待っている人たちは次第に（　）し始めた。",
+              "explanation_uz": "いらいら = asabiylashish, betoqat bo'lish"
+            },
+            {
+              "id": "t2-v4-20",
+              "options": [
+                "アプローチ",
+                "アレンジ",
+                "アシスト",
+                "アドバイス"
+              ],
+              "answer": 2,
+              "tr": "Yapon sushisini moslashtirgan (modifikatsiya qilgan) g'arbona sushi chet elda mashhur.",
+              "stem": "日本の寿司を（　）した洋風の寿司が海外で人気だ。",
+              "explanation_uz": "アレンジ (arrange) = yangicha talqin qilish, moslashtirish"
+            },
+            {
+              "id": "t2-v4-21",
+              "options": [
+                "長期",
+                "不変",
+                "永遠",
+                "不滅"
+              ],
+              "answer": 3,
+              "tr": "Baxt abadiy davom etishi mumkin emasmi-a?",
+              "stem": "幸福が（　）に続くことはありえないのだろうか。",
+              "explanation_uz": "永遠に (えいえんに) = abadiy, mangu"
+            },
+            {
+              "id": "t2-v4-22",
+              "options": [
+                "謙遜",
+                "遠慮",
+                "配慮",
+                "恐縮"
+              ],
+              "answer": 1,
+              "tr": "U ulkan korporatsiya prezidenti o'zida aytarli iste'dod yo'qligini kamtarlik bilan aytadi.",
+              "stem": "あの大企業の社長は自分にはこれといった才能はないと（　）している。",
+              "explanation_uz": "謙遜 (けんそん) = kamtarlik qilish"
+            }
+          ]
+        },
+        {
+          "id": "v5",
+          "type": "usage",
+          "instruction_jp": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Tagiga chizilgan so'zga ma'nosi eng yaqin sinonimni tanlang.",
+          "questions": [
+            {
+              "id": "t2-v5-23",
+              "options": [
+                "記録した",
+                "発表した",
+                "重視した",
+                "経験した"
+              ],
+              "answer": 4,
+              "tr": "O'yinda yutqazish alamini totib ko'rdim (boshdan kechirdim).",
+              "stem": "試合に負けた悔しさを【味わった】。",
+              "reading": "あじわった",
+              "explanation_uz": "味わう → 経験した (boshdan kechirish, his qilish)"
+            },
+            {
+              "id": "t2-v5-24",
+              "options": [
+                "約束通り",
+                "思いがけなく",
+                "確かに",
+                "都合よく"
+              ],
+              "answer": 2,
+              "tr": "Sayohat paytida kutilmaganda (tasodifan) eski do'stimni uchratib qoldim.",
+              "stem": "旅先で【偶然】昔の友人に出会った。",
+              "reading": "ぐうぜん",
+              "explanation_uz": "偶然 → 思いがけなく (kutilmaganda, tasodifan)"
+            },
+            {
+              "id": "t2-v5-25",
+              "options": [
+                "変化がない",
+                "よく変わる",
+                "手間がかかる",
+                "休みがない"
+              ],
+              "answer": 1,
+              "tr": "Zavoddagi bir xil (zerikarli, monoton) ishdan zerikib qoldim.",
+              "stem": "工場の【単調な】作業にあきてきた。",
+              "reading": "たんちょうな",
+              "explanation_uz": "単調な → 変化がない (o'zgarishsiz, monoton)"
+            },
+            {
+              "id": "t2-v5-26",
+              "options": [
+                "のんびりした",
+                "予想しない",
+                "頼りになる",
+                "元気のよい"
+              ],
+              "answer": 3,
+              "tr": "Yutqazib qiynalib turganda, kuchli (suyanadigan, ishonchli) ittifoqchi paydo bo'ldi.",
+              "stem": "負けて困っているところに、【強力な】味方が現れた。",
+              "reading": "きょうりょくな",
+              "explanation_uz": "強力な → 頼りになる (ishonchli, suyansa bo'ladigan)"
+            },
+            {
+              "id": "t2-v5-27",
+              "options": [
+                "国際性がある",
+                "物知りだ",
+                "二カ国語を話す",
+                "二重国籍だ"
+              ],
+              "answer": 3,
+              "tr": "U ikki tilda gaplashuvchi (bilingual) shaxsdir.",
+              "stem": "彼は【バイリンガル】だ。",
+              "explanation_uz": "バイリンガル = 二カ国語を話す (ikki tilda so'zlasha oladigan)"
+            }
+          ]
+        },
+        {
+          "id": "v6",
+          "type": "usage_special",
+          "instruction_jp": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Quyidagi so'zning eng to'g'ri ishlatilgan gapini tanlang.",
+          "questions": [
+            {
+              "id": "t2-v6-28",
+              "options": [
+                "彼は酒を飲むとすぐに本性を反映する。",
+                "隠していた事実がついに世間に反映されてしまった。",
+                "客の希望を反映して、配達のサービスを始めた。",
+                "黒のドレスは色白の女性の美しさを特に反映していた。"
+              ],
+              "answer": 3,
+              "tr": "反映 (はんえい) = aks ettirish, inobatga olish.",
+              "stem": "反映",
+              "optsTr": [
+                "U ichgach o'z xarakterini 'aks ettiradi' (noto'g'ri — 現す).",
+                "Yashiringan haqiqat omma orasida 'aks etdi' (noto'g'ri — 知れ渡った).",
+                "Mijozlarning istaklarini inobatga olib (aks ettirib), yetkazib berish xizmatini yo'lga qo'ydik. (to'g'ri)",
+                "Qora ko'ylak oqtanli ayol go'zalligini 'aks ettirdi' (noto'g'ri — 引き立てる)."
+              ]
+            },
+            {
+              "id": "t2-v6-29",
+              "options": [
+                "話がおもしろくてためいきが出た。",
+                "苦手な上司の声を聞いただけで、ぞっとためいきが出る。",
+                "息子のひどい成績に母は思わずためいきをついた。",
+                "プールに入る前に、ためいきをしてください。"
+              ],
+              "answer": 3,
+              "tr": "ためいき (溜め息) = chuqur xo'rsinish, nafas chiqarish.",
+              "stem": "ためいき",
+              "optsTr": [
+                "Gap qiziq bo'lgani uchun 'xo'rsindim' (noto'g'ri — 笑った).",
+                "Yoqtirmaydigan boshliq ovozidan qo'rqib 'xo'rsindi' (noto'g'ri).",
+                "O'g'lining yomon baholarini ko'rib ona beixtiyor chuqur xo'rsinib qo'ydi. (to'g'ri)",
+                "Basseynga tushishdan oldin 'xo'rsinib oling' (noto'g'ri — 準備運動)."
+              ]
+            },
+            {
+              "id": "t2-v6-30",
+              "options": [
+                "動物には、人間にない特殊な能力を持つものが多い。",
+                "夜中に特殊な物音がして目が覚めた。",
+                "彼って特殊にもてるけど、どこがいいのかしらね。",
+                "今日は特殊にあなただけにプレゼントをあげます。"
+              ],
+              "answer": 1,
+              "tr": "特殊 (とくしゅ) = o'ziga xos, maxsus, g'ayrioddiy.",
+              "stem": "特殊",
+              "optsTr": [
+                "Hayvonlar orasida insonda bo'lmagan o'ziga xos (maxsus) qobiliyatga ega bo'lganlari ko'p. (to'g'ri)",
+                "Tunda 'maxsus' tovush eshitilib uyg'ondim (noto'g'ri — 奇妙な).",
+                "U 'maxsus' mashhur (noto'g'ri — やたら).",
+                "Bugun 'maxsus' sovg'a beraman (noto'g'ri — 特別)."
+              ]
+            },
+            {
+              "id": "t2-v6-31",
+              "options": [
+                "授業は個々の生徒の能力に合った加速度で進める。",
+                "もう少し加速度をつけないと時間に遅れてしまう。",
+                "あの人とはなぜか話の加速度が合わない。",
+                "地上を離れた飛行機は一気に加速度を増した。"
+              ],
+              "answer": 4,
+              "tr": "加速度 (かそくど) = tezlanish (akseleratsiya).",
+              "stem": "加速度",
+              "optsTr": [
+                "Darsni har bir o'quvchi qobiliyatiga mos 'tezlanish' bilan o'tamiz (noto'g'ri — ペース/速度).",
+                "Biroz 'tezlanish' qo'shmasak kech qolamiz (noto'g'ri — スピード).",
+                "U bilan gapning 'tezlanishi' to'g'ri kelmaydi (noto'g'ri — テンポ).",
+                "Yerdan ko'tarilgan samolyot birdaniga tezlanishini oshirdi. (to'g'ri)"
+              ]
+            },
+            {
+              "id": "t2-v6-32",
+              "options": [
+                "私は工場建設に賛成の彼とは矛盾する立場にある。",
+                "2人は最初から最後まで矛盾ばかりだ。",
+                "税金は安くして行政サービスはよくしろだなんて、矛盾している。",
+                "やっぱり聞くことと見るのでは矛盾している。"
+              ],
+              "answer": 3,
+              "tr": "矛盾 (むじゅん) = qarama-qarshilik, zidlik (mantiqsizlik).",
+              "stem": "矛盾",
+              "optsTr": [
+                "Men zavod qurilishini qo'llagan u kishi bilan 'zid' pozitsiyadaman (noto'g'ri — 対立).",
+                "Ikkovi boshidan oxirigacha 'zid' (noto'g'ri — 口喧嘩).",
+                "Soliqni arzon qilib, davlat xizmatlarini yaxshilang deyish — mantiqan qarama-qarshidir (ziddir). (to'g'ri)",
+                "Eshitish bilan ko'rish 'zid' (noto'g'ri — 異なる)."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name_jp": "文法",
+      "name_uz": "Grammatika",
+      "problems": [
+        {
+          "id": "g1",
+          "type": "grammar_form",
+          "instruction_jp": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Gapdagi ( ) ga qo'yish uchun eng mos grammatik shaklni tanlang.",
+          "questions": [
+            {
+              "id": "t2-g1-33",
+              "options": [
+                "わけ",
+                "こと",
+                "もの",
+                "どころ"
+              ],
+              "answer": 1,
+              "tr": "Puli yo'q degani emas-ku, ammo keraksiz narsani sotib olmaslikka qaror qilganman.",
+              "stem": "お金がない（　）ではないが、必要ないものは買わないことにしている。",
+              "explanation_uz": "〜わけではない = mutlaqo ... degani emas (qisman rad etish)"
+            },
+            {
+              "id": "t2-g1-34",
+              "options": [
+                "としたら",
+                "としても",
+                "とすると",
+                "となれば"
+              ],
+              "answer": 2,
+              "tr": "Hozirdan juda shoshib borgan taqdirda ham, baribir darsga ulgura olmasak kerak.",
+              "stem": "これから大急ぎで行った（　）、授業に間に合わないだろう。",
+              "explanation_uz": "〜としても = garchi ... bo'lgan taqdirda ham"
+            },
+            {
+              "id": "t2-g1-35",
+              "options": [
+                "最中に",
+                "直後に",
+                "途端に",
+                "瞬間に"
+              ],
+              "answer": 1,
+              "tr": "Do'stim bilan gurunglashib turgan ayni paytimda boshqa bir do'stimdan qo'ng'iroq bo'lib qoldi.",
+              "stem": "友人とおしゃべりをしている（　）、別の友人から電話がかかってきた。",
+              "explanation_uz": "〜最中に (さいちゅうに) = ayni ... qilib turgan fursatda"
+            },
+            {
+              "id": "t2-g1-36",
+              "options": [
+                "信じかねない",
+                "信じるしかない",
+                "信じがたい",
+                "信じざるを得ない"
+              ],
+              "answer": 3,
+              "tr": "Bu kichkina surat 100 million iyen turadi deb ishonish juda qiyin-a!",
+              "stem": "この小さな絵が1億円もするなんて、（　）ですね。",
+              "explanation_uz": "〜がたい = qilish/tasavvur qilish juda mushkul, qiyin"
+            },
+            {
+              "id": "t2-g1-37",
+              "options": [
+                "に対して",
+                "に応じて",
+                "に当たって",
+                "に反して"
+              ],
+              "answer": 4,
+              "tr": "Bunday qiyin kitob sotilmaydi degan taxminga zid ravishda, 100 ming nusxadan ziyod sotildi.",
+              "stem": "こんな難しい本は売れないだろうという予想（　）、10万冊以上売れた。",
+              "explanation_uz": "〜に反して (にはんして) = ...ga qarama-qarshi o'laroq, zid bo'lib"
+            },
+            {
+              "id": "t2-g1-38",
+              "options": [
+                "するものか",
+                "するものか",
+                "しないものだ",
+                "しないものか"
+              ],
+              "answer": 2,
+              "tr": "Boshqa aslo xato qilmayman deb qat'iy o'ylagan edim, ammo yana qilib qo'ydim.",
+              "stem": "もう二度と失敗は（　）と思ったのに、またやってしまった。",
+              "explanation_uz": "〜ものか = aslo ...mayman (qat'iy inkor qarori)"
+            },
+            {
+              "id": "t2-g1-39",
+              "options": [
+                "もう",
+                "こう",
+                "そう",
+                "どう"
+              ],
+              "answer": 3,
+              "tr": "A: «Ko'rishmaganimizga ancha bo'ldi-ya!»\nB: «Haqiqatan ham. Shu mavzu esga tushgan ekan, otangizning betobligi shundan so'ng qanday bo'ldi?»",
+              "stem": "A「お久しぶりです。」\nB「本当に。（　）言えば、お父さまの病気はその後、いかがですか。」",
+              "explanation_uz": "そう言えば = aytgancha, shu esimga tushdi"
+            },
+            {
+              "id": "t2-g1-40",
+              "options": [
+                "したい",
+                "した",
+                "しよう",
+                "しない"
+              ],
+              "answer": 3,
+              "tr": "Men turmush quramanmi yoki qurmaymanmi — bu sizga aloqasi bo'lmagan ishdir.",
+              "stem": "私が結婚（　）がしまいが、あなたには関係ないことだ。",
+              "explanation_uz": "〜ようが〜まいが = qilsam ham, qilmasam ham (baribir)"
+            },
+            {
+              "id": "t2-g1-41",
+              "options": [
+                "飲みすぎない",
+                "飲みかねない",
+                "飲みやすい",
+                "飲みにくい"
+              ],
+              "answer": 4,
+              "tr": "Bu dorining donasi juda katta bo'lgani uchun, yutish juda noqulay (qiyin).",
+              "stem": "この薬の粒は大きすぎて、とても（　）。",
+              "explanation_uz": "〜にくい = qilish/yutish qiyin, noqulay"
+            },
+            {
+              "id": "t2-g1-42",
+              "options": [
+                "指導するしかないよ",
+                "指導するわけがないよ",
+                "指導するどころではないよ",
+                "指導するはずがないよ"
+              ],
+              "answer": 1,
+              "tr": "A: «Chekkan bilan hamma ham kasal bo'lavermaydi-ku.»\nB: «Shunday bo'lsa-da shifokor nazdida, chekishni tashlashni tavsiya qilishdan boshqa chora yo'q.»",
+              "stem": "A「たばこを吸っても、必ず病気になるわけではないだろう。」\nB「それでも医者にすれば、禁煙を（　）。」",
+              "explanation_uz": "〜しかない = ...dan boshqa iloj/chora yo'q"
+            },
+            {
+              "id": "t2-g1-43",
+              "options": [
+                "歩くようにしたものの",
+                "歩くようにしたところ",
+                "歩くようにしたものが",
+                "歩くようにしたところで"
+              ],
+              "answer": 2,
+              "tr": "Kompaniyadan bir bekat oldin tushib piyoda yurishga odatlangan edim, 3 oyda vaznim ancha kamaydi.",
+              "stem": "会社の一駅前で降りて（　）、3カ月で体重がかなり減った。",
+              "explanation_uz": "〜たところ = ...qilgan edimki, natijada..."
+            },
+            {
+              "id": "t2-g1-44",
+              "options": [
+                "お見せいただけますか",
+                "見られていただけますか",
+                "見ていただけますか",
+                "見せていただけますか"
+              ],
+              "answer": 4,
+              "tr": "Yig'ilishda qatnasha olmaganim sababli, materiallarni ko'rsatib bera olasizmi?",
+              "stem": "会議に出席できなかったので、資料を（　）",
+              "explanation_uz": "見せていただけますか = ko'rsatib bera olasizmi (xushmuomala so'rov: 〜ていただく)"
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "type": "sentence_order",
+          "instruction_jp": "次の文の ★ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Gapdagi ★ o'rniga tushadigan eng to'g'ri bo'lakni tanlang.",
+          "questions": [
+            {
+              "id": "t2-g2-45",
+              "options": [
+                "忘れてしまう",
+                "忘れない",
+                "ので",
+                "そばから"
+              ],
+              "answer": 3,
+              "tr": "To'g'ri tartib: 難しい漢字は、習うそばから忘れてしまうので、忘れないうちにきちんと復習しよう。",
+              "explanation_uz": "To'g'ri tartib: 習う[そばから][忘れてしまう][★ので][忘れない] (4 → 1 → 3 → 2)",
+              "prefix": "難しい漢字は、習う",
+              "suffix": "うちにきちんと復習しよう。",
+              "starPos": 3,
+              "order": [
+                4,
+                1,
+                3,
+                2
+              ]
+            },
+            {
+              "id": "t2-g2-46",
+              "options": [
+                "でも",
+                "では",
+                "次第",
+                "話し方"
+              ],
+              "answer": 4,
+              "tr": "To'g'ri tartib: 同じ言葉でも、話し方次第では印象が変わってしまうことがある。",
+              "explanation_uz": "To'g'ri tartib: 同じ言葉[でも][★話し方][次第][では] (1 → 4 → 3 → 2)",
+              "prefix": "同じ言葉",
+              "suffix": "印象が変わってしまうことがある。",
+              "starPos": 2,
+              "order": [
+                1,
+                4,
+                3,
+                2
+              ]
+            },
+            {
+              "id": "t2-g2-47",
+              "options": [
+                "最初の",
+                "限って",
+                "無料",
+                "レッスンに"
+              ],
+              "answer": 2,
+              "tr": "To'g'ri tartib: この学校では、最初のレッスンに限って無料で受けることができます。",
+              "explanation_uz": "To'g'ri tartib: [最初の][レッスンに][★限って][無料] (1 → 4 → 2 → 3)",
+              "prefix": "この学校では、",
+              "suffix": "で受けることができます。",
+              "starPos": 3,
+              "order": [
+                1,
+                4,
+                2,
+                3
+              ]
+            },
+            {
+              "id": "t2-g2-48",
+              "options": [
+                "の",
+                "わりには",
+                "年齢",
+                "ピアノ"
+              ],
+              "answer": 1,
+              "tr": "To'g'ri tartib: この子は年齢のわりにはピアノが上手だ。",
+              "explanation_uz": "To'g'ri tartib: この子は[年齢][★の][わりには][ピアノ] (3 → 1 → 2 → 4)",
+              "prefix": "この子は",
+              "suffix": "が上手だ。",
+              "starPos": 2,
+              "order": [
+                3,
+                1,
+                2,
+                4
+              ]
+            },
+            {
+              "id": "t2-g2-49",
+              "options": [
+                "取る",
+                "成績から",
+                "こんな成績を",
+                "見ても"
+              ],
+              "answer": 3,
+              "tr": "To'g'ri tartib: あの学生の今までの成績から見ても、こんな成績を取るなんて信じられない。",
+              "explanation_uz": "To'g'ri tartib: [成績から][見ても][★こんな成績を][取る] (2 → 4 → 3 → 1)",
+              "prefix": "あの学生の今までの",
+              "suffix": "なんて信じられない。",
+              "starPos": 3,
+              "order": [
+                2,
+                4,
+                3,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g3",
+          "type": "text_grammar",
+          "instruction_jp": "次の文章を読んで、50から54の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "instruction_uz": "Matnni o'qib, 50-54 bo'sh joylariga eng to'g'ri variantni tanlang.",
+          "passage_title": "寿司の歴史と工夫",
+          "passage": "あなたは日本のすし屋のカウンターで、「お好み」ですしを食べたことがありますか。\nカウンターのケースの中を見ながら、好きな魚を選び、それを注文して、にぎってもらうので、いちばんおいしい状態で食べられます。ただ自分がどれくらい食べたか、金額が {{50}} 注意が必要です。\nこのとき、たとえば「マグロ」と注文すると、通常、マグロのすしが2つ出てきます。なぜそうなのか。江戸時代のおすしは大きかったので、2つに切って出したなごりとか、計算しやすくするためだとか、いろいろな説があります。結局、はっきりとはわからなくて、「昔からそうなっている」としか {{51}} 。\nところで、この場合、 {{52}} で行けば食べればいいけれど、1人で行って10個食べるとしたら、魚は5種類しか食べられません。ある回転ずし店で、1枚の皿に違う種類のすしを1つずつ2個、乗せ始めました。これなら、食べた寿司の数だけ {{53}} が食べられるので人気が出て、客が増えたそうです。考えたら単純なアイデアです。でも「昔からそうなっている」ことをちょっと変えてみる、そこにお客が増えるかぎがありました。\n私たちの身の回りにも、「ちょっと変えてみたらよくなる」ことがたくさんあるかもしれません。常識 {{54}} 、頭を柔らかくしておくことが大事なのです。",
+          "passage_tr": "Siz Yaponiyadagi sushi restoranining bar peshtaxtasida «o'z xohishingiz bo'yicha» (okonomi) sushi yeb ko'rganmisiz?\nVitrindagi baliqlarni ko'rib turib, yoqtirganingizni tanlab buyurtma berasiz va yangi tayyorlab beriladi, shuning uchun eng mazali holatida yeya olasiz. Faqat qancha yeganingiz va pul miqdorini payqash qiyin bo'lgani sababli ehtiyotkorlik zarur.\nBu paytda, masalan «Maguro» deb buyurtma bersangiz, odatda 2 dona maguro sushisi keltiriladi. Nega unday? Edo davridagi sushi katta bo'lgani uchun ikkiga bo'lib berilganidan qolgan odat degan yoki hisob-kitobni osonlashtirish uchun degan turli qarashlar bor. Yakunda aniq ma'lum bo'lmay, «qadimdan shunday bo'lib kelgan» deb aytishdan boshqa chora yo'q.\nAytgancha, bunday vaziyatda 2 kishi bo'lib borsangiz yaxshi-ku, lekin 1 kishi borib 10 dona yesa, atigi 5 xil baliqni tatib ko'ra oladi, xolos. Bir aylanma sushi do'koni 1 ta likopchaga 2 xil sushidan bittadan qo'yib bera boshladi. Shunday qilinganda yegan sushi sonicha har xil sushilarni yeyish mumkinligi sababli juda ommalashdi. O'ylab ko'rsa oddiy g'oya. Biroq «qadimdan shunday bo'lgan» narsani biroz o'zgartirib ko'rish — mijozlarni jalb qilish siri shu yerda edi.\nBizning atrofimizda ham «biroz o'zgartirsa yaxshi bo'ladigan» jihatlar juda ko'p bo'lishi mumkin. Qotib qolgan tushunchalarga yopishib olmasdan, fikrlashni moslashuvchan tutish muhimdir.",
+          "questions": [
+            {
+              "id": "t2-g3-50",
+              "options": [
+                "わかりやすいので",
+                "わかってしまうので",
+                "わかりづらいので",
+                "わかりかねないので"
+              ],
+              "answer": 3,
+              "tr": "金額が[わかりづらいので]注意が必要です = hisob-kitob miqdorini bilish qiyin bo'lgani uchun.",
+              "explanation_uz": "〜づらい = bilish/aniqlash mushkul",
+              "blankNo": "50"
+            },
+            {
+              "id": "t2-g3-51",
+              "options": [
+                "言えるでしょう",
+                "言いようがありません",
+                "言いかねません",
+                "言うまでもありません"
+              ],
+              "answer": 2,
+              "tr": "昔からそうなっているとしか[言いようがありません] = «qadimdan shunday» deb aytishdan boshqa so'z yo'q.",
+              "explanation_uz": "〜ようがない = aytishning/qilishning hech bir yo'li yo'q",
+              "blankNo": "51"
+            },
+            {
+              "id": "t2-g3-52",
+              "options": [
+                "a 1人 ／ b 1個ずつ ／ c 1人",
+                "a 1人 ／ b 2個ずつ ／ c 2人",
+                "a 2人 ／ b 1個ずつ ／ c 1人",
+                "a 2人 ／ b 2個ずつ ／ c 1人"
+              ],
+              "answer": 3,
+              "tr": "2人で行けば1個ずつ食べればいいけれど、1人で行って... (2 kishi borsa 1 donadan yeydi).",
+              "explanation_uz": "Tartib: 2人 (a) / 1個ずつ (b) / 1人 (c)",
+              "blankNo": "52"
+            },
+            {
+              "id": "t2-g3-53",
+              "options": [
+                "同じすし",
+                "たくさんのすし",
+                "全部のすし",
+                "いろいろなすし"
+              ],
+              "answer": 4,
+              "tr": "食べた寿司の数だけ[いろいろなすし]が食べられる = yeganicha har xil turlarini yeyish mumkin.",
+              "explanation_uz": "Turli baliq turlarini tatib ko'rish haqida: いろいろなすし",
+              "blankNo": "53"
+            },
+            {
+              "id": "t2-g3-54",
+              "options": [
+                "にとらわれないで",
+                "をこわさないように",
+                "にかかわらないで",
+                "をぬきにして"
+              ],
+              "answer": 1,
+              "tr": "常識[にとらわれないで]、頭を柔らかくしておくことが大事 = qolipga yopishib qolmasdan.",
+              "explanation_uz": "〜にとらわれる = biror tushunchaga bandi/cheklanib qolish (にとらわれないで = cheklanmasdan)",
+              "blankNo": "54"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
