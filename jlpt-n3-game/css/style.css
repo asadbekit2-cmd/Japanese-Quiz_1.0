@@ -387,6 +387,10 @@ rt{font-size:.52em;color:rgba(78,203,255,.75);font-weight:500}
 .wrong-correct b{color:#5dffa0}
 .wrong-expl{font-size:11.5px;color:var(--muted);font-family:var(--jp);line-height:1.55;
   margin-top:6px;padding-top:7px;border-top:1px solid rgba(255,255,255,.06)}
+.fb-sentence-jp{display:block;font-family:var(--jp);font-size:14px;color:rgba(200,220,255,.85);
+  margin-top:8px;line-height:1.8;letter-spacing:.5px}
+.fb-sentence-uz{display:block;font-size:12px;color:rgba(180,200,255,.6);font-style:italic;
+  margin-top:3px;line-height:1.6}
 
 /* ===== toast ===== */
 .toast{position:fixed;top:20px;left:50%;transform:translate(-50%,-90px);

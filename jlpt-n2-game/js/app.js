@@ -692,7 +692,9 @@
     } else {
       // To'g'ri javob matnini ko'rsatamiz (original q.answer pozitsiyasi bilan)
       const ans = q.options ? q.options[q.answer - 1] : "";
-      expl = (right ? "" : `To'g'ri javob: <b>${esc(ans)}</b><br>`) + (q.explanation_uz ? esc(q.explanation_uz) : (q.reading ? esc(q.reading) : ""));
+      expl = (right ? "" : `To'g'ri javob: <b>${esc(ans)}</b><br>`) + (q.explanation_uz ? esc(q.explanation_uz) : (q.reading ? esc(q.reading) : "")) +
+             (q.stem ? `<br><span class="fb-sentence-jp">${esc(q.stem)}</span>` : "") +
+             (q.tr ? `<br><span class="fb-sentence-uz">${esc(q.tr)}</span>` : "");
     }
     $("#fb-expl").innerHTML = expl;
     $("#btn-next").textContent = (Q.idx + 1 >= Q.queue.length) ? "Yakunlash 🏁" : "Davom →";
@@ -794,7 +796,9 @@
         `<div class="wrong-type-tag">${esc(TYPE_UZ[type] || type)}</div>` +
         `<div class="wrong-stem">${esc(stemHtml)}</div>` +
         `<div class="wrong-correct">✅ To'g'ri: <b>${q.answer}. ${esc(correctOpt)}</b></div>` +
-        (q.explanation_uz ? `<div class="wrong-expl">${esc(q.explanation_uz)}</div>` : "");
+        (q.explanation_uz ? `<div class="wrong-expl">${esc(q.explanation_uz)}</div>` : "") +
+        (q.stem ? `<div class="fb-sentence-jp">${esc(q.stem)}</div>` : "") +
+        (q.tr ? `<div class="fb-sentence-uz">${esc(q.tr)}</div>` : "");
       list.appendChild(entry);
     });
   }
