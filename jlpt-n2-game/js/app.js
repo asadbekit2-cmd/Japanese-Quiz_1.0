@@ -1135,6 +1135,9 @@
     $("#kc-kanji").textContent = card.kanji;
     $("#kc-back-reading").textContent = card.reading;
     $("#kc-back-meaning").textContent = card.meaning;
+    const cleanStem = card.stem ? String(card.stem).replace(/【([^】]*)】/g, "$1") : "";
+    const stemEl = $("#kc-back-stem");
+    if (stemEl) stemEl.textContent = cleanStem ? "「" + cleanStem + "」" : "";
     $("#kc-back-sentence").textContent = card.sentence ? "「" + card.sentence + "」" : "";
 
     // Hint visibility — faqat flipdan keyin ko'rish uchun

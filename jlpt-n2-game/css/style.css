@@ -869,11 +869,15 @@ rt{font-size:.52em;color:rgba(78,203,255,.75);font-weight:500}
 .kc-back-meaning{
   font-size:14.5px;color:rgba(232,236,255,.9);
   font-weight:600;line-height:1.5;max-width:260px}
-.kc-back-sentence{
-  font-family:var(--jp);font-size:13.5px;color:var(--muted);
-  line-height:1.7;max-width:280px;
+.kc-back-stem{
+  font-family:var(--jp);font-size:15px;color:#4ecbff;
+  font-weight:600;line-height:1.6;max-width:290px;
   border-top:1px solid rgba(255,255,255,.07);
-  padding-top:14px;margin-top:4px}
+  padding-top:12px;margin-top:4px}
+.kc-back-sentence{
+  font-size:13px;color:rgba(232,236,255,.8);
+  line-height:1.5;max-width:290px;margin-top:2px;
+  font-style:italic}
 
 /* Action buttons */
 .kc-actions{
